@@ -1,22 +1,26 @@
 .container-esquerdo-login {
-    position: relative;
-    width: 50%;
-    float: left;
-    height: 100%;
-    background-color: white; 
-    display:flex;
+  position: relative;
+  width: 50%;
+  float: left;
+  height: 100%;
+  background-color: white;
+  display: flex;
 }
 
 .container-direito-login {
-    position: relative;
-    width: 50%;
-    float: left;
-    height: 100%;
-    background-color: #0080ff; 
-  }
+  position: relative;
+  width: 50%;
+  float: left;
+  height: 100%;
+  background-color: #0080ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
 .form-login {
-  display: flex; 
+  display: flex;
   flex-direction: column;
 }
 
@@ -30,44 +34,117 @@
   color: #0bb3e4;
 }
 
-.container-sub{
-    display:flex; 
-    align-items: center;
-    flex-direction: column; 
-    margin-bottom: 32px;
+.container-sub {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
 }
 
-.first-sub{
-    font-size: 1.6vw;
-    color: #162a43;
+.first-sub {
+  font-size: 1.6vw;
+  color: #162a43;
 }
 
-.second-sub{
-    font-size: 0.7vw;    
-    color: #919aa9;
+.second-sub {
+  font-size: 0.9vw;
+  color: #919aa9;
 }
 
-.container-principal{
-    display: flex; 
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    padding: 30%;
-} 
+.container-principal {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 30%;
+}
 
 .button-login {
-    background-color: #0c6fff; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;    
-    border-radius: 5px;
-    font-size: 16px;
+  background-color: #0c6fff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+
+
+}
+
+.button-login:hover {
+  background-color: #0c6dffcb;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+.input-login {
+  font-size: 12px;
+  color: gray;
+  line-height: 20px;
+  margin-bottom: 4%;
+
+  &:focus {
+    outline: none !important;
+    border: 1px solid #0c6dffcb;
+    box-shadow: 0 0 10px #719ECE;
   }
+}
 
 
-  .input-login {
-      font-size: 12px;
-      line-height: 20px;
-  } 
+.copyright {
+  color: white;
+  font-size: 0.9vw;
+}
+
+.container-logo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
+}
+
+.container-logo-words {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.logo1 {
+  font-family: 'Press Start 2P';
+  font-size: 3vw;
+  font-weight: 100;
+  color: #0c6fff;
+}
+
+.logo2 {
+  font-family: 'MontSerrat';
+  font-size: 2.5vw;
+  color: #ffae00;
+  padding-right: 2%
+}
+
+.logo3 {
+  font-family: 'Press Start 2P';
+  font-size: 3vw;
+  font-weight: 100;
+  color: #0c6fff;
+}
+
+.logo-sub {
+  font-family: 'MontSerrat';
+  font-size: 1vw;
+  color: #ffae00;
+  margin-top: -2%;
+  font-weight: 700;
+}
+
+.link {
+  color: #0c6fff;
+  text-decoration: underline;
+  text-underline-position: under;
+}
