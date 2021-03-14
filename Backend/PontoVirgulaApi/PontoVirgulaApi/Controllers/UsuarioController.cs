@@ -1,40 +1,39 @@
 ﻿using APIPontoVirgula.Data;
 using APIPontoVirgula.Data.Repository.ModelEntity;
-using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PontoVirgulaApi.Models;
 using System.Collections.Generic;
-using System.Threading.Tasks; 
+using System.Threading.Tasks;
 
 namespace APIPontoVirgula.Controllers
 {
     [Route("api/[controller]")]
 
     [ApiController]
- 
+
     public class UsuarioController : ControllerBase
     {
         [HttpPost("Validation")]
-        public async Task<ActionResult> GetValidation([FromServices] DataContext context, UsuarioModelView usuarioModel)
+        public async Task<ActionResult<bool>> GetValidation([FromServices] DataContext context, UsuarioModelView usuarioModel)
         {
             var usuario = await context.Usuario
                                 .AsNoTracking()
                                 .FirstOrDefaultAsync(x => x.EMAIL == usuarioModel.Email);
 
-            if(usuario == null)
+            if (usuario == null)
             {
-                return Ok(0);
+                return false;
             }
             else
             {
-                if(usuario.SENHA == usuarioModel.Senha)
+                if (usuario.SENHA == usuarioModel.Senha)
                 {
-                    return Ok(1);
+                    return true;
                 }
                 else
                 {
-                    return Ok(0);
+                    return false;
                 }
             }
         }
@@ -50,7 +49,7 @@ namespace APIPontoVirgula.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Usuario>> Post([FromServices] DataContext context, [FromBody] Usuario usuario)
+        public async Task<ActionResult<Usuario>> Post([FromServices] DataContext context, Usuario usuario)
         {
             if (ModelState.IsValid)
             {
