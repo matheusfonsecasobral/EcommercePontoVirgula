@@ -96,6 +96,30 @@
   }
 }
 
+.input-login {
+  font-size: 12px;
+  color: gray;
+  line-height: 20px;
+  margin-bottom: 4%;
+
+  &:focus {
+    outline: none !important;
+    border: 1px solid #0c6dffcb;
+    box-shadow: 0 0 10px #719ECE;
+  }
+}
+
+
+.input-error {
+  font-size: 12px;
+  color: gray;
+  line-height: 20px;
+  margin-bottom: 4%;
+  outline: none !important;
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.425);
+}
+
 
 .copyright {
   color: white;
@@ -147,4 +171,11 @@
   color: #0c6fff;
   text-decoration: underline;
   text-underline-position: under;
+  cursor: pointer;
+}
+
+
+.legend-error {
+  color: rgba(255, 0, 0, 0.651);
+  margin-bottom: 5%;
 }

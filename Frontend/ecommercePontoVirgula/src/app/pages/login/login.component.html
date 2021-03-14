@@ -13,29 +13,40 @@
     </div>
     <div class="container-sub">
       <span class="first-sub">
-        Crie sua conta agora
+     {{titleText}}
       </span>
       <span class="second-sub">
-        Já possui conta? <a href="#" class="link">Acesse aqui!</a>
+        {{subtitleText}} <a (click)="alterModeLoginRegister()" class="link">Acesse aqui!</a>
       </span>
     </div>
 
     <div class="form-login">
-      <span>Nome</span>
-      <input [ngClass]="{'input-error': errorStyleName}" class="input-login" type="text" placeholder="Seu nome completo">
+      <div *ngIf="!loginMode">
+        <span>Nome completo</span>
+        <input [ngClass]="{'input-error': errorStyleName}" id="nome" class="input-login" type="text"
+          placeholder="Seu nome completo">
+        <span class="legend-error" *ngIf="errorStyleName">{{msgErrorName}}</span>
+      </div>
+
       <span>E-mail</span>
+      <input [ngClass]="{'input-error': errorStyleLogin}" id="email" class="input-login" type="text"
+        placeholder="Seu e-mail">
+      <span class="legend-error" *ngIf="errorStyleLogin"> {{msgErrorEmail}}</span>
 
-      <input [ngClass]="{'input-error': errorStyleLogin}" class="input-login" type="text" placeholder="Seu e-mail">
       <span>Senha</span>
+      <input [ngClass]="{'input-error': errorStylePassword}" id="senha" class="input-login" type="password"
+        placeholder="******">
+      <span class="legend-error" *ngIf="errorStylePassword"> {{msgErrorPassword}}</span>
 
-      <input [ngClass]="{'input-error': errorStylePassword}" class="input-login" type="password" placeholder="******">
-      <!-- <span  [ngStyle]="{'display:' errorStylePassword ? 'flex' : 'none';  }"> Senha não pode ser menor que 6 caracteres.</span> -->
+      <div *ngIf="!loginMode">
+        <span>Confirmar senha</span>
+        <input [ngClass]="{'input-error' : errorStyleConfirmPassword}" id="confirmarSenha" class="input-login"
+          type="password" placeholder="******">
+        <span class="legend-error" *ngIf="errorStyleConfirmPassword">{{msgErrorConfirmPassword}}</span>
+      </div>
 
-      <span>Confirmar senha</span>
-      <input [ngClass]="{'input-error' : errorStyleConfirmPassword}" class="input-login" type="password" placeholder="******">
-
-      <button class="button-login">
-        <i class="fas fa-sign-in-alt"></i> Cadastrar
+      <button (click)="login()" class="button-login">
+        <i class="fas fa-sign-in-alt"></i> {{buttonTextLoginRegister}}
       </button>
 
     </div>
