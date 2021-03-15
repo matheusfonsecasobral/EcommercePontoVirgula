@@ -11,7 +11,7 @@ namespace APIPontoVirgula.Data.Repository.ModelEntity
     public class Usuario
     {
         [Key]
-        public int ID_USUARIO { get; set; }
+        public int ID { get; set; }
 
         [Required]
         public string NOME { get; set; }

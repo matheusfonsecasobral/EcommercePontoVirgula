@@ -10,5 +10,10 @@ namespace APIPontoVirgula.Data
         }
 
         public DbSet<Usuario> Usuario { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Password=sa123;Persist Security Info=True;User ID=thiago;Initial Catalog=DbPontoVirgula;Data Source=DESKTOP-UNJT0R6");
+        }
     }
 }

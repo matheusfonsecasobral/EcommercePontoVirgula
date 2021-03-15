@@ -55,8 +55,6 @@ C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgu
 C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\PontoVirgulaApi.dll
 C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\PontoVirgulaApi.pdb
 C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.csproj.CoreCompileInputs.cache
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.dll
 C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.pdb
 C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.genruntimeconfig.cache
@@ -122,3 +120,7 @@ D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\De
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.RazorTargetAssemblyInfo.cache
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.csproj.CopyComplete
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.genruntimeconfig.cache
+C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.csproj.CoreCompileInputs.cache
+C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.MvcApplicationPartsAssemblyInfo.cache

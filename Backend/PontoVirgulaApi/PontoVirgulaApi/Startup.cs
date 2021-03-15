@@ -28,7 +28,7 @@ namespace PontoVirgulaApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCors();
-            services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("DbPontoVirgula"));
+            services.AddDbContext<DataContext>(opt => opt.UseSqlServer("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=DbPontoVirgula;Data Source=DESKTOP-UNJT0R6"));
             services.AddScoped<DataContext, DataContext>();
             services.AddControllers(); 
         }
