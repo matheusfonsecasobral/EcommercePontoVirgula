@@ -15,7 +15,7 @@ namespace APIPontoVirgula.Controllers
     public class UsuarioController : ControllerBase
     {
         [HttpPost("Validation")]
-        public async Task<ActionResult<bool>> GetValidation([FromServices] DataContext context, UsuarioModelView usuarioModel)
+        public async Task<ActionResult<bool>> GetValidation([FromServices] DataContext context, [FromBody] UsuarioModelView usuarioModel)
         {
             var usuario = await context.Usuario
                                 .AsNoTracking()
@@ -44,6 +44,16 @@ namespace APIPontoVirgula.Controllers
             var usuarios = await context.Usuario
                                 .AsNoTracking()
                                 .ToListAsync();
+
+            return usuarios;
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Usuario>> GetList([FromServices] DataContext context, int id)
+        {
+            var usuarios = await context.Usuario
+                                    .AsNoTracking()
+                                    .FirstOrDefaultAsync(x => x.ID == id);
 
             return usuarios;
         }
