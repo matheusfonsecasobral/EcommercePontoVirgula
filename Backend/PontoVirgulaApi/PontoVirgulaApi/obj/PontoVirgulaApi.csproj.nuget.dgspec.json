@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\famil\\OneDrive\\Área de Trabalho\\Raquel\\Projeto\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\PontoVirgulaApi.csproj": {}
   },
   "projects": {
@@ -22,6 +23,23 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+=======
+    "D:\\Projetos\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\PontoVirgulaApi.csproj": {}
+  },
+  "projects": {
+    "D:\\Projetos\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\PontoVirgulaApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projetos\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\PontoVirgulaApi.csproj",
+        "projectName": "PontoVirgulaApi",
+        "projectPath": "D:\\Projetos\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\PontoVirgulaApi.csproj",
+        "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
+        "outputPath": "D:\\Projetos\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> 935fb8cf319200dd02010508ad350cd79405f254
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -89,7 +107,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+>>>>>>> 935fb8cf319200dd02010508ad350cd79405f254
         }
       }
     }

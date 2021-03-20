@@ -124,6 +124,7 @@ C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgu
 C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.csproj.CoreCompileInputs.cache
 C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.MvcApplicationPartsAssemblyInfo.cache
+<<<<<<< HEAD
 C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\PontoVirgulaApi.exe
@@ -188,3 +189,7 @@ C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\B
 C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.dll
 C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.pdb
 C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.genruntimeconfig.cache
+=======
+D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Humanizer.dll
+D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+>>>>>>> 935fb8cf319200dd02010508ad350cd79405f254
