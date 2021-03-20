@@ -124,3 +124,5 @@ C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgu
 C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.csproj.CoreCompileInputs.cache
 C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.MvcApplicationPartsAssemblyInfo.cache
+D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Humanizer.dll
+D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
