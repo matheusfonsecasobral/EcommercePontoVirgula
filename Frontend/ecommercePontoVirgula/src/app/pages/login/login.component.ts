@@ -1,6 +1,6 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { UsuarioModel } from 'src/app/models/usuario/usuario';
+import { UsuarioLoginModel, UsuarioModel } from 'src/app/models/usuario/usuario';
 import { LoginService } from 'src/app/services/login.service';
 import { environment } from 'src/environments/environment';
 
@@ -23,10 +23,10 @@ export class LoginComponent implements OnInit {
   titleText: string = '';
   subtitleText: string = '';
   numPromiseAll: number = 0;
+  sucessoAoCadastrar : boolean = false;
 
   constructor(private http: HttpClient,
     private loginService: LoginService) {
-
   }
 
   ngOnInit(): void {
@@ -61,79 +61,141 @@ export class LoginComponent implements OnInit {
       email = (<HTMLInputElement>document.getElementById("email")).value
       senha = (<HTMLInputElement>document.getElementById("senha")).value
       passwordConfirm = (<HTMLInputElement>document.getElementById("confirmarSenha")).value
+      let validationError: boolean = false;
 
-      if (completeName.length === 0) {
+      if (!completeName.length) {
         this.errorStyleName = true;
         this.msgErrorName = "Nome deve ser preenchido."
+        validationError = true;
       }
 
-      if (email.length === 0) {
+      if (!email.length) {
         this.errorStyleLogin = true;
         this.msgErrorEmail = "E-mail deve ser preenchido."
+        validationError = true;
       }
 
-      if (senha.length === 0) {
+      if (!senha.length) {
         this.errorStylePassword = true
         this.msgErrorPassword = "Senha deve ser preenchida."
+        validationError = true;
       }
 
-      if (passwordConfirm.length === 0) {
+      if (!passwordConfirm.length) {
         this.errorStyleConfirmPassword = true;
         this.msgErrorConfirmPassword = "Confirmar Senha deve ser preenchido."
+        validationError = true;
       }
 
       if (senha !== passwordConfirm) {
         this.errorStylePassword = true;
         this.errorStyleConfirmPassword = true;
         this.msgErrorConfirmPassword = "Senhas não são iguais"
+        validationError = true;
       }
 
-    } else {
-
-      email = (<HTMLInputElement>document.getElementById("email")).value
-      senha = (<HTMLInputElement>document.getElementById("senha")).value
-
-      if (email.length === 0) {
-        this.errorStyleLogin = true;
-        this.msgErrorEmail = "E-mail deve ser preenchido."
+      if (validationError) {
+        return;
       }
 
-      if (senha.length === 0) {
-        this.errorStylePassword = true
-        this.msgErrorPassword = "Senha deve ser preenchida."
+      let usuario: UsuarioModel = {
+        Email: email,
+        Senha: senha,
+        NomeCompleto: completeName
       }
-
-      let usuario: UsuarioModel = new UsuarioModel();
-      usuario.Email = email;
-      usuario.Senha = senha;
-
+ 
       let onInits = [];
       this.numPromiseAll = 0;
-      debugger
       onInits.push(
-        this.loginService.validarLogin(usuario)
+        this.loginService.cadastrarUsuario(usuario)
           .toPromise()
-          .then((data: any) => { 
-            console.log(data);
+          .then((response: boolean) => { 
+            console.log(response);
+            if (!response) {
+              this.errorStyleConfirmPassword = true;
+              this.msgErrorPassword = "Erro ao cadastrar-se.";
+            } else {
+              this.sucessoAoCadastrar = true;
+             
+              setTimeout(() => {
+               this.loginMode = true;
+               this.sucessoAoCadastrar = false;
+               (<HTMLInputElement>document.getElementById("email")).value = "";
+               (<HTMLInputElement>document.getElementById("senha")).value =  "";
+              }, 3000); 
+            }
           }),
       )
       Promise.all(onInits)
-        .then((data) => {
+        .then((response) => {
           if (this.numPromiseAll == 0) {
-
           }
           this.numPromiseAll++
         })
-        .catch((error) => {
+        .catch((error: HttpErrorResponse) => {
+          this.errorStylePassword = true;
+          this.msgErrorPassword = "Erro ao conectar-se.";
+          console.log(error.statusText, error.message, error.url)
+        })
 
+    } else {
+      let validationError : boolean = false; 
+      email = (<HTMLInputElement>document.getElementById("email")).value
+      senha = (<HTMLInputElement>document.getElementById("senha")).value
+
+      if (!email.length) {
+        this.errorStyleLogin = true;
+        this.msgErrorEmail = "E-mail deve ser preenchido."
+        validationError = true;
+      }
+
+      if (!senha.length) {
+        this.errorStylePassword = true
+        this.msgErrorPassword = "Senha deve ser preenchida."
+        validationError = true;
+      }
+
+
+      let usuario: UsuarioLoginModel = {
+        Email: email,
+        Senha: senha,
+      };
+
+      if (validationError) {
+        return;
+      } 
+
+      let onInits = [];
+      this.numPromiseAll = 0;
+      onInits.push(
+        this.loginService.validarLogin(usuario)
+          .toPromise()
+          .then((response: any) => {         
+            debugger   
+            if (response === false) {
+              this.errorStylePassword = true;
+              this.msgErrorPassword = "E-mail/Senha incorretos";
+            } else {
+              //this.route.navigate
+            }
+          }),
+      )
+      Promise.all(onInits)
+        .then((response) => {
+          if (this.numPromiseAll == 0) {
+          }
+          this.numPromiseAll++
+        })
+        .catch((error: HttpErrorResponse) => {
+          this.errorStylePassword = true;
+          this.msgErrorPassword = "Erro ao conectar-se.";
+          console.log(error.statusText, error.message, error.url)
         })
     }
   }
 
   alterModeLoginRegister() {
     this.loginMode = !this.loginMode;
-    this.titleText = !this.loginMode ? 'Crie sua conta agora!' : 'Conectar-se';
-    this.subtitleText = !this.loginMode ? 'Já possui conta?' : 'Ainda não é registrado?';
-    this.buttonTextLoginRegister = !this.loginMode ? "Cadastrar" : "Logar"
+    this.resetValuesError();
   }
 }

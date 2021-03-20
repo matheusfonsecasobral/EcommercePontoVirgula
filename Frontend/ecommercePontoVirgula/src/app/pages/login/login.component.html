@@ -11,44 +11,60 @@
       </div>
       <div class="logo-sub">Ponto&Vírgula</div>
     </div>
-    <div class="container-sub">
-      <span class="first-sub">
-     {{titleText}}
-      </span>
-      <span class="second-sub">
-        {{subtitleText}} <a (click)="alterModeLoginRegister()" class="link">Acesse aqui!</a>
-      </span>
+    <div *ngIf="!sucessoAoCadastrar || !loginMode">
+      <div class="container-sub" *ngIf="!sucessoAoCadastrar">
+        <span class="first-sub">
+          {{titleText}}
+        </span>
+        <span class="second-sub">
+          {{subtitleText}} <a (click)="alterModeLoginRegister()" class="link">Acesse aqui!</a>
+        </span>
+      </div>
+
+      <div class="form-login" *ngIf="!sucessoAoCadastrar">
+        <div class="complete-name-container" *ngIf="!loginMode">
+          <span>Nome completo</span>
+          <input [ngClass]="{'input-error': errorStyleName}" id="nome" class="input-login" type="text"
+            placeholder="Seu nome completo">
+          <span class="legend-error" *ngIf="errorStyleName">{{msgErrorName}}</span>
+        </div>
+
+        <div class="email-container">
+          <span>E-mail</span>
+          <input [ngClass]="{'input-error': errorStyleLogin}" id="email" class="input-login" type="text"
+            placeholder="Seu e-mail">
+          <span class="legend-error" *ngIf="errorStyleLogin"> {{msgErrorEmail}}</span>
+        </div>
+
+        <div class="senha-container">
+          <span>Senha</span>
+          <input [ngClass]="{'input-error': errorStylePassword}" id="senha" class="input-login" type="password"
+            placeholder="******">
+          <span class="legend-error" *ngIf="errorStylePassword"> {{msgErrorPassword}}</span>
+        </div>
+
+        <div class="confirm-password-container" *ngIf="!loginMode">
+          <span>Confirmar senha</span>
+          <input [ngClass]="{'input-error' : errorStyleConfirmPassword}" id="confirmarSenha" class="input-login"
+            type="password" placeholder="******">
+          <span class="legend-error" *ngIf="errorStyleConfirmPassword">{{msgErrorConfirmPassword}}</span>
+        </div>
+
+        <button (click)="login()" class="button-login">
+          <i class="fas fa-sign-in-alt"></i> {{buttonTextLoginRegister}}
+        </button>
+
+      </div>
     </div>
 
-    <div class="form-login">
-      <div *ngIf="!loginMode">
-        <span>Nome completo</span>
-        <input [ngClass]="{'input-error': errorStyleName}" id="nome" class="input-login" type="text"
-          placeholder="Seu nome completo">
-        <span class="legend-error" *ngIf="errorStyleName">{{msgErrorName}}</span>
+    <div *ngIf="sucessoAoCadastrar && !loginMode">
+      <div class="container-cadastrado-sucesso-geral">
+        <div class="container-cadastrado-sucesso">
+          <i class="fas fa-check-circle sucesso"></i>
+          <p class="cadastrado-sucesso">Cadastrado com sucesso!</p>       
+        </div>
+        <p class="legend-sucesso">Aguarde um momento, você será redirecionado...</p>
       </div>
-
-      <span>E-mail</span>
-      <input [ngClass]="{'input-error': errorStyleLogin}" id="email" class="input-login" type="text"
-        placeholder="Seu e-mail">
-      <span class="legend-error" *ngIf="errorStyleLogin"> {{msgErrorEmail}}</span>
-
-      <span>Senha</span>
-      <input [ngClass]="{'input-error': errorStylePassword}" id="senha" class="input-login" type="password"
-        placeholder="******">
-      <span class="legend-error" *ngIf="errorStylePassword"> {{msgErrorPassword}}</span>
-
-      <div *ngIf="!loginMode">
-        <span>Confirmar senha</span>
-        <input [ngClass]="{'input-error' : errorStyleConfirmPassword}" id="confirmarSenha" class="input-login"
-          type="password" placeholder="******">
-        <span class="legend-error" *ngIf="errorStyleConfirmPassword">{{msgErrorConfirmPassword}}</span>
-      </div>
-
-      <button (click)="login()" class="button-login">
-        <i class="fas fa-sign-in-alt"></i> {{buttonTextLoginRegister}}
-      </button>
-
     </div>
   </div>
 </div>

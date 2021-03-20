@@ -3,6 +3,7 @@ using APIPontoVirgula.Data.Repository.ModelEntity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PontoVirgulaApi.Models;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -15,26 +16,33 @@ namespace APIPontoVirgula.Controllers
     public class UsuarioController : ControllerBase
     {
         [HttpPost("Validation")]
-        public async Task<ActionResult<bool>> GetValidation([FromServices] DataContext context, [FromBody] UsuarioModelView usuarioModel)
+        public async Task<ActionResult> GetValidation([FromServices] DataContext context, [FromBody] UsuarioModelView usuarioModel)
         {
-            var usuario = await context.Usuario
-                                .AsNoTracking()
-                                .FirstOrDefaultAsync(x => x.EMAIL == usuarioModel.Email);
+            try
+            {
+                var usuario = await context.Usuario
+                                               .AsNoTracking()
+                                               .FirstOrDefaultAsync(x => x.EMAIL == usuarioModel.Email);
 
-            if (usuario == null)
-            {
-                return false;
-            }
-            else
-            {
-                if (usuario.SENHA == usuarioModel.Senha)
+                if (usuario == null)
                 {
-                    return true;
+                    return Ok(false);
                 }
                 else
                 {
-                    return false;
+                    if (usuario.SENHA == usuarioModel.Senha)
+                    {
+                        return Ok(true);
+                    }
+                    else
+                    {
+                        return Ok(false);
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
             }
         }
 
@@ -59,19 +67,24 @@ namespace APIPontoVirgula.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Usuario>> Post([FromServices] DataContext context, Usuario usuario)
+        public async Task<ActionResult> Post([FromServices] DataContext context, UsuarioModelView usuarioModel)
         {
-            if (ModelState.IsValid)
+            try
             {
+                Usuario usuario = new Usuario();
+                usuario.EMAIL = usuarioModel.Email;
+                usuario.NOME = usuarioModel.NomeCompleto;
+                usuario.SENHA = usuarioModel.Senha;
+
                 context.Usuario.Add(usuario);
                 await context.SaveChangesAsync();
-                return usuario;
+                return Ok(true);
             }
-            else
+            catch (Exception ex)
             {
-                return BadRequest(ModelState);
-
+                return BadRequest(ex.Message);
             }
+
         }
     }
 }
