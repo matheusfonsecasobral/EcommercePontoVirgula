@@ -1,65 +1,3 @@
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\PontoVirgulaApi.exe
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.csprojAssemblyReference.cache
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.AssemblyInfoInputs.cache
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.AssemblyInfo.cs
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.RazorTargetAssemblyInfo.cache
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\staticwebassets\PontoVirgulaApi.StaticWebAssets.Manifest.cache
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\staticwebassets\PontoVirgulaApi.StaticWebAssets.xml
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.csproj.CopyComplete
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\PontoVirgulaApi.deps.json
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\PontoVirgulaApi.runtimeconfig.json
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\PontoVirgulaApi.runtimeconfig.dev.json
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\PontoVirgulaApi.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\PontoVirgulaApi.pdb
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.pdb
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.genruntimeconfig.cache
-D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.dll
-D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.pdb
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\PontoVirgulaApi.exe
@@ -68,9 +6,11 @@ D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\De
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\PontoVirgulaApi.runtimeconfig.dev.json
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\PontoVirgulaApi.dll
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\PontoVirgulaApi.pdb
+D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Humanizer.dll
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
@@ -109,7 +49,6 @@ D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\De
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.csprojAssemblyReference.cache
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.AssemblyInfoInputs.cache
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.AssemblyInfo.cs
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.csproj.CoreCompileInputs.cache
@@ -119,77 +58,7 @@ D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\De
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\scopedcss\bundle\PontoVirgulaApi.styles.css
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.RazorTargetAssemblyInfo.cache
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.csproj.CopyComplete
+D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.dll
+D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.pdb
 D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.genruntimeconfig.cache
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Humanizer.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.csproj.CoreCompileInputs.cache
-C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.MvcApplicationPartsAssemblyInfo.cache
-<<<<<<< HEAD
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\PontoVirgulaApi.exe
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\PontoVirgulaApi.deps.json
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\PontoVirgulaApi.runtimeconfig.json
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\PontoVirgulaApi.runtimeconfig.dev.json
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\PontoVirgulaApi.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\PontoVirgulaApi.pdb
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Humanizer.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.csprojAssemblyReference.cache
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.AssemblyInfoInputs.cache
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.AssemblyInfo.cs
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.csproj.CoreCompileInputs.cache
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\staticwebassets\PontoVirgulaApi.StaticWebAssets.Manifest.cache
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\staticwebassets\PontoVirgulaApi.StaticWebAssets.xml
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\scopedcss\bundle\PontoVirgulaApi.styles.css
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.RazorTargetAssemblyInfo.cache
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.csproj.CopyComplete
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.dll
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.pdb
-C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.genruntimeconfig.cache
-=======
-D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Humanizer.dll
-D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
->>>>>>> 935fb8cf319200dd02010508ad350cd79405f254
+D:\Projetos\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.csprojAssemblyReference.cache

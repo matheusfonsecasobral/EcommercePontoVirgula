@@ -163,7 +163,6 @@
   font-family: 'MontSerrat';
   font-size: 1vw;
   color: #ffae00;
-  margin-top: -2%;
   font-weight: 700;
 }
 
@@ -178,4 +177,55 @@
 .legend-error {
   color: rgba(255, 0, 0, 0.651);
   margin-bottom: 5%;
+}
+
+.complete-name-container {
+  margin-bottom: 5%;
+}
+
+.confirm-password-container {
+  margin-bottom: 5%;
+}
+
+.email-container {
+  margin-bottom: 5%;
+}
+
+.senha-container {
+  margin-bottom: 5%;
+}
+
+
+.container-cadastrado-sucesso-geral {
+  display: flex;
+  flex-direction: column; 
+  width: 35vw;
+  margin-top: 15%;
+}
+
+
+.container-cadastrado-sucesso {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 35vw;  
+}
+
+.sucesso {
+  color: #58da58;
+  font-size: 3vw; 
+}
+
+.cadastrado-sucesso{
+  font-family: "MontSerrat";
+  font-size: 1.5vw;
+  margin-left: 5%;
+}
+
+
+.legend-sucesso{
+  font-family: "MontSerrat";
+  font-size: 1vw;
+  color: lightgray;
+  margin-left: 5%;
 }
