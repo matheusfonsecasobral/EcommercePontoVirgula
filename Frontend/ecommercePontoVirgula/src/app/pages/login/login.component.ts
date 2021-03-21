@@ -2,7 +2,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthGuardService } from 'src/app/guards/auth-guard.service';
-import { UsuarioLoginModel, UsuarioModel } from 'src/app/models/usuario/usuario';
+import { UsuarioModel } from 'src/app/models/usuario/usuario';
 import { LoginService } from 'src/app/services/login.service';
 import { environment } from 'src/environments/environment';
 
@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
   errorStyleLogin: boolean = false;
   errorStylePassword: boolean = false;
   errorStyleConfirmPassword: boolean = false;
-  loginMode: boolean = false;
+  loginMode: boolean = true;
   msgErrorName: string = '';
   msgErrorEmail: string = '';
   msgErrorPassword: string = '';
@@ -160,9 +160,10 @@ export class LoginComponent implements OnInit {
       }
 
 
-      let usuario: UsuarioLoginModel = {
+      let usuario: UsuarioModel = {
         Email: email,
-        Senha: senha
+        Senha: senha,
+        NomeCompleto: ''
       };
 
       if (validationError) {
@@ -174,12 +175,16 @@ export class LoginComponent implements OnInit {
       onInits.push(
         this.loginService.validarLogin(usuario)
           .toPromise()
-          .then((response: any) => {          
+          .then((response: any) => {        
+            debugger       
             if (!response) {
               this.errorStylePassword = true;
               this.msgErrorPassword = "E-mail/Senha incorretos";
             } else {
-              this.authGuard.active() 
+              this.authGuard.active()  
+              this.loginService.usuario.NomeCompleto = response.nomeCompleto;
+              this.loginService.usuario.Email = response.email;
+              this.loginService.usuario.Senha = response.senha;
                this.router.navigate(['dashboard']);
             }
           }),

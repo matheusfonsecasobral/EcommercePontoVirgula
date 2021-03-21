@@ -1,37 +1,117 @@
+
+$azul-cinzento: #497285;
+$cinza-escuro: #2b4450;
+$laranja: #f78536;
+$cinza-claro: #dfebed;
+
 .cabecalho {
   position: fixed;
   width: 100%;
   height: 20vh;
   z-index: 5000;
-  animation: headerStick 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  background-color:#0080ff;
+  background-color: $cinza-escuro;
   align-items: center;
   display: flex;
-
+  height: 7vh;
+  box-shadow: 0px 0px 1px 9px $laranja;
 }
 
 
-.items-container{
+.items-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  width: 100%;
 }
 
-.user-button{
-  padding: 5px; 
-  color: orange;
-  border: 1px solid orange;
+.user-button {
+  padding: 7px;
+  color: $azul-cinzento;
+  border: 1px solid $azul-cinzento;
   border-radius: 5px;
+  margin-right: 0.5vw;
+  font-size: 1.2vw;
+
+  &:hover {
+    color: $laranja;
+    border: 1px solid $laranja;
+  }
 }
 
-.user-login{
+.logo {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  justify-content: space-around;
-  width: 5vw;
+  margin-right: auto;
+  margin-left: 3vw;
 }
 
-.legend-user{
-  color: orange;
+.container-logo-words {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.logo1 {
+  font-family: 'Press Start 2P';
+  font-size: 3vw;
+  font-weight: 100;
+  color: white;
+
+  @media screen and (max-width: 480px) {
+    font-size: 10vw;
+  }
+}
+
+.logo2 {
+  font-family: 'MontSerrat';
+  font-size: 2.5vw;
+  color: $laranja;
+  padding-right: 2%;
+
+  @media screen and (max-width: 480px) {
+    font-size: 8.5vw;
+  }
+}
+
+.logo3 {
+  font-family: 'Press Start 2P';
+  font-size: 3vw;
+  font-weight: 100;
+  color: white;
+
+  @media screen and (max-width: 480px) {
+    font-size: 10vw;
+  }
+}
+
+.logo-sub {
+  font-family: 'MontSerrat';
+  font-size: 1vw;
+  color: $laranja;
+  font-weight: 700;
+
+  @media screen and (max-width: 480px) {
+    font-size: 3.5vw;
+  }
+}
+
+
+.user-login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: 3vw;
+
+}
+
+.legend-user {
+  font-family: "MontSerrat";
+  font-size: 0.9vw;
+  color: $cinza-claro;
+  font-weight: 600;
+  cursor: pointer;
 }

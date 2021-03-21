@@ -1,3 +1,5 @@
+$azul-cinzento: #497285;
+$laranja: #f78536;
 .container-esquerdo-login {
   position: relative;
   width: 50%;
@@ -18,7 +20,7 @@
   width: 50%;
   float: left;
   height: 100%;
-  background-color: #0080ff;
+  background-color: $azul-cinzento;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,7 +38,7 @@
 
 
 .login-label1 {
-  color: #0c6fff;
+  color: $azul-cinzento;
 
 }
 
@@ -81,7 +83,7 @@
 }
 
 .button-login {
-  background-color: #0c6fff;
+  background-color: $azul-cinzento;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -94,7 +96,7 @@
 }
 
 .button-login:hover {
-  background-color: #0c6dffcb;
+  background-color: $laranja;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -113,7 +115,7 @@
 
   &:focus {
     outline: none !important;
-    border: 1px solid #0c6dffcb;
+    border: 1px solid $azul-cinzento;
     box-shadow: 0 0 10px #719ECE;
   }
 }
@@ -126,7 +128,7 @@
 
   &:focus {
     outline: none !important;
-    border: 1px solid #0c6dffcb;
+    border: 1px solid $azul-cinzento;
     box-shadow: 0 0 10px #719ECE;
   }
 }
@@ -146,6 +148,7 @@
 .copyright {
   color: white;
   font-size: 0.9vw;
+  margin-top: 10vh;
 }
 
 .container-logo {
@@ -164,7 +167,7 @@
   font-family: 'Press Start 2P';
   font-size: 3vw;
   font-weight: 100;
-  color: #0c6fff;
+  color: $azul-cinzento;
 
   @media screen and (max-width: 480px) {
     font-size: 10vw;
@@ -174,7 +177,7 @@
 .logo2 {
   font-family: 'MontSerrat';
   font-size: 2.5vw;
-  color: #ffae00;
+  color: $laranja;
   padding-right: 2%;
   @media screen and (max-width: 480px) {
     font-size: 8.5vw;
@@ -185,7 +188,7 @@
   font-family: 'Press Start 2P';
   font-size: 3vw;
   font-weight: 100;
-  color: #0c6fff;
+  color: $azul-cinzento;
   @media screen and (max-width: 480px) {
     font-size: 10vw;
   }
@@ -194,7 +197,7 @@
 .logo-sub {
   font-family: 'MontSerrat';
   font-size: 1vw;
-  color: #ffae00;
+  color: $laranja;
   font-weight: 700;
   @media screen and (max-width: 480px) {
     font-size: 3.5vw;
@@ -202,10 +205,10 @@
 }
 
 .link {
-  color: #0c6fff;
+  color: $laranja;
   text-decoration: underline;
   text-underline-position: under;
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 
@@ -263,4 +266,15 @@
   font-size: 1vw;
   color: lightgray;
   margin-left: 5%;
+}
+
+
+.imagem-login{
+  display:flex;
+  justify-content: center; 
+}
+
+
+.imgsrc{
+  width:70%;
 }

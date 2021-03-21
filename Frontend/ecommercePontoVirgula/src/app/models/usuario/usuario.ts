@@ -4,7 +4,3 @@ export class UsuarioModel{
     NomeCompleto : string = '';
 }
 
-export class UsuarioLoginModel{
-    Email : string = '';
-    Senha : string = '';
-}
