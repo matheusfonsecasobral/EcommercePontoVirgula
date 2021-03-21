@@ -16,7 +16,7 @@ namespace APIPontoVirgula.Controllers
     public class UsuarioController : ControllerBase
     {
         [HttpPost("Validation")]
-        public async Task<ActionResult> GetValidation([FromServices] DataContext context, [FromBody] UsuarioModelView usuarioModel)
+        public async Task<ActionResult<UsuarioModelView>> GetValidation([FromServices] DataContext context, [FromBody] UsuarioModelView usuarioModel)
         {
             try
             {
@@ -26,17 +26,22 @@ namespace APIPontoVirgula.Controllers
 
                 if (usuario == null)
                 {
-                    return Ok(false);
+                    return null;
                 }
                 else
                 {
                     if (usuario.SENHA == usuarioModel.Senha)
                     {
-                        return Ok(true);
+                        return new UsuarioModelView()
+                        {
+                            NomeCompleto = usuario.NOME,
+                            Email = usuario.EMAIL,
+                            Senha = usuario.SENHA
+                        };
                     }
                     else
                     {
-                        return Ok(false);
+                        return null;
                     }
                 }
             }

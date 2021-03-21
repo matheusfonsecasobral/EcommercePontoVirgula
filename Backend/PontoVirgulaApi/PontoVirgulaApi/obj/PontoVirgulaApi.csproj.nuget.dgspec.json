@@ -1,6 +1,11 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
+=======
+    "C:\\Users\\Japaaa\\Desktop\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\PontoVirgulaApi.csproj": {}
+<<<<<<< HEAD
+>>>>>>> 1fe50eef602d17942c1c61a6ba3c3d276549f317
     "D:\\Projetos\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\PontoVirgulaApi.csproj": {}
   },
   "projects": {
@@ -16,6 +21,33 @@
         "configFilePaths": [
           "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+<<<<<<< HEAD
+=======
+=======
+    "C:\\Users\\famil\\OneDrive\\Área de Trabalho\\Raquel\\Projeto\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\PontoVirgulaApi.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Japaaa\\Desktop\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\PontoVirgulaApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Japaaa\\Desktop\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\PontoVirgulaApi.csproj",
+        "projectName": "PontoVirgulaApi",
+        "projectPath": "C:\\Users\\Japaaa\\Desktop\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\PontoVirgulaApi.csproj",
+        "packagesPath": "C:\\Users\\Japaaa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Japaaa\\Desktop\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Japaaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\famil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+>>>>>>> d1ecdd1fe61073f87a5e08c9e9ad127e7a5d2200
+>>>>>>> 1fe50eef602d17942c1c61a6ba3c3d276549f317
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -26,7 +58,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -38,7 +69,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -83,6 +113,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+<<<<<<< HEAD
+>>>>>>> 1fe50eef602d17942c1c61a6ba3c3d276549f317
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
