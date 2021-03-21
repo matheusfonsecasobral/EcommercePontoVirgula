@@ -188,3 +188,4 @@ C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\B
 C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.dll
 C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.pdb
 C:\Users\famil\OneDrive\Área de Trabalho\Raquel\Projeto\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.genruntimeconfig.cache
+C:\Users\Japaaa\Desktop\EcommercePontoVirgula\Backend\PontoVirgulaApi\PontoVirgulaApi\obj\Debug\netcoreapp3.1\PontoVirgulaApi.csprojAssemblyReference.cache
