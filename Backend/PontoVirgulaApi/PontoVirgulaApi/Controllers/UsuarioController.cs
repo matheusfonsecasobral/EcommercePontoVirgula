@@ -57,13 +57,13 @@ namespace APIPontoVirgula.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Usuario>> GetList([FromServices] DataContext context, int id)
+        public async Task<ActionResult<Usuario>> GetUsuarioById([FromServices] DataContext context, int id)
         {
-            var usuarios = await context.Usuario
+            var usuario = await context.Usuario
                                     .AsNoTracking()
                                     .FirstOrDefaultAsync(x => x.ID == id);
 
-            return usuarios;
+            return usuario;
         }
 
         [HttpPost]
