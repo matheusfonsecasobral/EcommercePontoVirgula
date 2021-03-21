@@ -1,5 +1,7 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthGuardService } from 'src/app/guards/auth-guard.service';
 import { UsuarioLoginModel, UsuarioModel } from 'src/app/models/usuario/usuario';
 import { LoginService } from 'src/app/services/login.service';
 import { environment } from 'src/environments/environment';
@@ -26,7 +28,9 @@ export class LoginComponent implements OnInit {
   sucessoAoCadastrar : boolean = false;
 
   constructor(private http: HttpClient,
-    private loginService: LoginService) {
+    private loginService: LoginService,
+    private authGuard : AuthGuardService,
+    private router : Router) {
   }
 
   ngOnInit(): void {
@@ -158,7 +162,7 @@ export class LoginComponent implements OnInit {
 
       let usuario: UsuarioLoginModel = {
         Email: email,
-        Senha: senha,
+        Senha: senha
       };
 
       if (validationError) {
@@ -170,13 +174,13 @@ export class LoginComponent implements OnInit {
       onInits.push(
         this.loginService.validarLogin(usuario)
           .toPromise()
-          .then((response: any) => {         
-            debugger   
-            if (response === false) {
+          .then((response: any) => {          
+            if (!response) {
               this.errorStylePassword = true;
               this.msgErrorPassword = "E-mail/Senha incorretos";
             } else {
-              //this.route.navigate
+              this.authGuard.active() 
+               this.router.navigate(['dashboard']);
             }
           }),
       )

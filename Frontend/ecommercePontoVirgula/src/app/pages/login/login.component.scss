@@ -5,6 +5,12 @@
   height: 100%;
   background-color: white;
   display: flex;
+
+
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
 }
 
 .container-direito-login {
@@ -17,6 +23,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 }
 
 .form-login {
@@ -41,13 +51,21 @@
 }
 
 .first-sub {
-  font-size: 1.6vw;
+  font-size: 1.8vw;
   color: #162a43;
+
+  @media screen and (max-width: 480px) {
+    font-size: 7.0vw;
+  }
 }
 
 .second-sub {
-  font-size: 0.9vw;
+  font-size: 1vw;
   color: #919aa9;
+
+  @media screen and (max-width: 480px) {
+    font-size: 3.0vw;
+  } 
 }
 
 .container-principal {
@@ -56,6 +74,10 @@
   flex-direction: column;
   width: 100%;
   padding: 30%;
+  
+  @media screen and (max-width: 480px) {
+    padding: 10vw;
+  }
 }
 
 .button-login {
@@ -143,13 +165,20 @@
   font-size: 3vw;
   font-weight: 100;
   color: #0c6fff;
+
+  @media screen and (max-width: 480px) {
+    font-size: 10vw;
+  }
 }
 
 .logo2 {
   font-family: 'MontSerrat';
   font-size: 2.5vw;
   color: #ffae00;
-  padding-right: 2%
+  padding-right: 2%;
+  @media screen and (max-width: 480px) {
+    font-size: 8.5vw;
+  }
 }
 
 .logo3 {
@@ -157,6 +186,9 @@
   font-size: 3vw;
   font-weight: 100;
   color: #0c6fff;
+  @media screen and (max-width: 480px) {
+    font-size: 10vw;
+  }
 }
 
 .logo-sub {
@@ -164,6 +196,9 @@
   font-size: 1vw;
   color: #ffae00;
   font-weight: 700;
+  @media screen and (max-width: 480px) {
+    font-size: 3.5vw;
+  }
 }
 
 .link {
@@ -198,7 +233,7 @@
 
 .container-cadastrado-sucesso-geral {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   width: 35vw;
   margin-top: 15%;
 }
@@ -208,22 +243,22 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 35vw;  
+  width: 35vw;
 }
 
 .sucesso {
   color: #58da58;
-  font-size: 3vw; 
+  font-size: 3vw;
 }
 
-.cadastrado-sucesso{
+.cadastrado-sucesso {
   font-family: "MontSerrat";
   font-size: 1.5vw;
   margin-left: 5%;
 }
 
 
-.legend-sucesso{
+.legend-sucesso {
   font-family: "MontSerrat";
   font-size: 1vw;
   color: lightgray;

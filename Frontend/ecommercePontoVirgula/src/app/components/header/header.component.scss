@@ -1,0 +1,37 @@
+.cabecalho {
+  position: fixed;
+  width: 100%;
+  height: 20vh;
+  z-index: 5000;
+  animation: headerStick 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background-color:#0080ff;
+  align-items: center;
+  display: flex;
+
+}
+
+
+.items-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-button{
+  padding: 5px; 
+  color: orange;
+  border: 1px solid orange;
+  border-radius: 5px;
+}
+
+.user-login{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 5vw;
+}
+
+.legend-user{
+  color: orange;
+}

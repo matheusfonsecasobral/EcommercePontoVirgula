@@ -10,6 +10,8 @@ export class LoginService {
 
   constructor(private httpClient : HttpClient ) {} 
 
+  public usuario : UsuarioModel | undefined;
+
   validarLogin(usuarioModel: UsuarioLoginModel) {
     return this.httpClient.post<any>(
       `${environment.endPoint}/usuario/validation`,
