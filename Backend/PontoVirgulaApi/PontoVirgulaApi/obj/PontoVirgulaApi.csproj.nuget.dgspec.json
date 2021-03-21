@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Japaaa\\Desktop\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\PontoVirgulaApi.csproj": {}
+    "D:\\Projetos\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\PontoVirgulaApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Japaaa\\Desktop\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\PontoVirgulaApi.csproj": {
+    "D:\\Projetos\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\PontoVirgulaApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Japaaa\\Desktop\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\PontoVirgulaApi.csproj",
+        "projectUniqueName": "D:\\Projetos\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\PontoVirgulaApi.csproj",
         "projectName": "PontoVirgulaApi",
-        "projectPath": "C:\\Users\\Japaaa\\Desktop\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\PontoVirgulaApi.csproj",
-        "packagesPath": "C:\\Users\\Japaaa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Japaaa\\Desktop\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\obj\\",
+        "projectPath": "D:\\Projetos\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\PontoVirgulaApi.csproj",
+        "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
+        "outputPath": "D:\\Projetos\\EcommercePontoVirgula\\Backend\\PontoVirgulaApi\\PontoVirgulaApi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Japaaa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -40,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -84,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
