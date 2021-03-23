@@ -8,8 +8,7 @@ import { AuthGuardService } from './guards/auth-guard.service';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginService } from './services/login.service';
 import { CabecalhoMenuComponent } from './components/cabecalho-menu/cabecalho-menu.component';
-import { NgxSpinnerModule } from "ngx-spinner";
-
+import { NgxSpinnerModule } from "ngx-spinner"; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +21,7 @@ import { NgxSpinnerModule } from "ngx-spinner";
     BrowserModule,
     AppRoutingModule,
     NgxSpinnerModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule, 
   ],
   schemas:[
     CUSTOM_ELEMENTS_SCHEMA

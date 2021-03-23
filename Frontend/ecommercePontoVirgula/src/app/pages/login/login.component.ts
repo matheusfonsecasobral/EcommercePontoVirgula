@@ -1,10 +1,11 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, Inject, OnInit } from '@angular/core';
+import { Router, ROUTER_CONFIGURATION } from '@angular/router';
 import { AuthGuardService } from 'src/app/guards/auth-guard.service';
 import { UsuarioModel } from 'src/app/models/usuario/usuario';
 import { LoginService } from 'src/app/services/login.service';
 import { environment } from 'src/environments/environment';
+import { LOCAL_STORAGE, StorageService } from "ngx-webstorage-service";
 
 @Component({
   selector: 'app-login',
@@ -25,15 +26,23 @@ export class LoginComponent implements OnInit {
   titleText: string = '';
   subtitleText: string = '';
   numPromiseAll: number = 0;
-  sucessoAoCadastrar : boolean = false;
+  sucessoAoCadastrar: boolean = false;
 
   constructor(private http: HttpClient,
     private loginService: LoginService,
-    private authGuard : AuthGuardService,
-    private router : Router) {
+    private authGuard: AuthGuardService,
+    private router: Router,
+    @Inject(LOCAL_STORAGE) private storage: StorageService) {
   }
 
   ngOnInit(): void {
+    
+    if (this.storage.get("isAuthenticated") !== null) {
+      if (this.storage.get("isAuthenticated")) {
+        this.router.navigate(["/dashboard"])
+      }
+    }
+
     this.titleText = !this.loginMode ? 'Crie sua conta agora!' : 'Conectar-se';
     this.subtitleText = !this.loginMode ? 'Já possui conta?' : 'Ainda não é registrado?';
     this.buttonTextLoginRegister = !this.loginMode ? "Cadastrar" : "Logar"
@@ -107,26 +116,26 @@ export class LoginComponent implements OnInit {
         Senha: senha,
         NomeCompleto: completeName
       }
- 
+
       let onInits = [];
       this.numPromiseAll = 0;
       onInits.push(
         this.loginService.cadastrarUsuario(usuario)
           .toPromise()
-          .then((response: boolean) => { 
+          .then((response: boolean) => {
             console.log(response);
             if (!response) {
               this.errorStyleConfirmPassword = true;
               this.msgErrorPassword = "Erro ao cadastrar-se.";
             } else {
               this.sucessoAoCadastrar = true;
-             
+
               setTimeout(() => {
-               this.loginMode = true;
-               this.sucessoAoCadastrar = false;
-               (<HTMLInputElement>document.getElementById("email")).value = "";
-               (<HTMLInputElement>document.getElementById("senha")).value =  "";
-              }, 3000); 
+                this.loginMode = true;
+                this.sucessoAoCadastrar = false;
+                (<HTMLInputElement>document.getElementById("email")).value = "";
+                (<HTMLInputElement>document.getElementById("senha")).value = "";
+              }, 3000);
             }
           }),
       )
@@ -143,7 +152,7 @@ export class LoginComponent implements OnInit {
         })
 
     } else {
-      let validationError : boolean = false; 
+      let validationError: boolean = false;
       email = (<HTMLInputElement>document.getElementById("email")).value
       senha = (<HTMLInputElement>document.getElementById("senha")).value
 
@@ -168,31 +177,31 @@ export class LoginComponent implements OnInit {
 
       if (validationError) {
         return;
-      } 
+      }
 
       let onInits = [];
-      this.numPromiseAll = 0;
-      debugger
+      this.numPromiseAll = 0; 
       this.loginService.iniciarSpinner();
       onInits.push(
         this.loginService.validarLogin(usuario)
           .toPromise()
-          .then((response: any) => {     
+          .then((response: any) => {
             if (!response) {
               this.errorStylePassword = true;
               this.msgErrorPassword = "E-mail/Senha incorretos";
             } else {
-              this.authGuard.active()  
-              this.loginService.usuario.NomeCompleto = response.nomeCompleto;
+             
+              this.loginService.usuario.NomeCompleto = response.nomeCompleto; 
               this.loginService.usuario.Email = response.email;
               this.loginService.usuario.Senha = response.senha;
-               this.router.navigate(['dashboard']);
-            } 
+              this.authGuard.active(response.nomeCompleto)
+              this.router.navigate(['/dashboard']);
+            }
           }),
       )
       Promise.all(onInits)
         .then((response) => {
-          if (this.numPromiseAll == 0) { 
+          if (this.numPromiseAll == 0) {
             this.loginService.fecharSpinner();
           }
           this.numPromiseAll++
@@ -204,7 +213,7 @@ export class LoginComponent implements OnInit {
           this.loginService.fecharSpinner();
         })
 
-        
+
     }
   }
 
