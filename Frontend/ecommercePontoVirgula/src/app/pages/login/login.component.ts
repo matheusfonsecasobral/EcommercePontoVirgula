@@ -172,11 +172,12 @@ export class LoginComponent implements OnInit {
 
       let onInits = [];
       this.numPromiseAll = 0;
+      debugger
+      this.loginService.iniciarSpinner();
       onInits.push(
         this.loginService.validarLogin(usuario)
           .toPromise()
-          .then((response: any) => {        
-            debugger       
+          .then((response: any) => {     
             if (!response) {
               this.errorStylePassword = true;
               this.msgErrorPassword = "E-mail/Senha incorretos";
@@ -186,12 +187,13 @@ export class LoginComponent implements OnInit {
               this.loginService.usuario.Email = response.email;
               this.loginService.usuario.Senha = response.senha;
                this.router.navigate(['dashboard']);
-            }
+            } 
           }),
       )
       Promise.all(onInits)
         .then((response) => {
-          if (this.numPromiseAll == 0) {
+          if (this.numPromiseAll == 0) { 
+            this.loginService.fecharSpinner();
           }
           this.numPromiseAll++
         })
@@ -199,7 +201,10 @@ export class LoginComponent implements OnInit {
           this.errorStylePassword = true;
           this.msgErrorPassword = "Erro ao conectar-se.";
           console.log(error.statusText, error.message, error.url)
+          this.loginService.fecharSpinner();
         })
+
+        
     }
   }
 

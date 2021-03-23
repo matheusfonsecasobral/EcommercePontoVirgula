@@ -1,0 +1,93 @@
+
+$azul-cinzento: #497285;
+$cinza-escuro: #2b4450;
+$laranja: #f78536;
+$cinza-claro: #dfebed;
+
+.cabecalho-secundario {
+    position: fixed;
+    top: 4vh;
+    width: 100%; 
+    z-index: 5000;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    height: 10vh;
+}
+
+
+.items-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+ 
+// .user-login {
+//   display: flex;
+//   justify-content: flex-end;
+//   align-items: center;
+//   flex-direction: row;
+//   margin-left: auto;
+//   margin-right: 3vw; 
+// }
+
+ 
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: 3vw;
+  }
+  
+  .container-logo-words {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  
+  .logo1 {
+    font-family: 'Press Start 2P';
+    font-size: 3vw;
+    font-weight: 100;
+    color: $azul-cinzento;
+  
+    @media screen and (max-width: 480px) {
+      font-size: 10vw;
+    }
+  }
+  
+  .logo2 {
+    font-family: 'MontSerrat';
+    font-size: 2.5vw;
+    color: $laranja;
+    padding-right: 2%;
+  
+    @media screen and (max-width: 480px) {
+      font-size: 8.5vw;
+    }
+  }
+  
+  .logo3 {
+    font-family: 'Press Start 2P';
+    font-size: 3vw;
+    font-weight: 100;
+    color: $azul-cinzento;
+  
+    @media screen and (max-width: 480px) {
+      font-size: 10vw;
+    }
+  }
+  
+  .logo-sub {
+    font-family: 'MontSerrat';
+    font-size: 1vw;
+    color: $laranja;
+    font-weight: 700;
+  
+    @media screen and (max-width: 480px) {
+      font-size: 3.5vw;
+    }
+  }

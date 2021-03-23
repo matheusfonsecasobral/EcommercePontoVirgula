@@ -1,4 +1,3 @@
-
 $azul-cinzento: #497285;
 $cinza-escuro: #2b4450;
 $laranja: #f78536;
@@ -7,13 +6,11 @@ $cinza-claro: #dfebed;
 .cabecalho {
   position: fixed;
   width: 100%;
-  height: 20vh;
   z-index: 5000;
   background-color: $cinza-escuro;
   align-items: center;
   display: flex;
-  height: 7vh;
-  box-shadow: 0px 0px 1px 9px $laranja;
+  height: 4vh;
 }
 
 
@@ -24,79 +21,14 @@ $cinza-claro: #dfebed;
   width: 100%;
 }
 
-.user-button {
-  padding: 7px;
-  color: $azul-cinzento;
-  border: 1px solid $azul-cinzento;
-  border-radius: 5px;
-  margin-right: 0.5vw;
-  font-size: 1.2vw;
-
-  &:hover {
-    color: $laranja;
-    border: 1px solid $laranja;
-  }
-}
-
-.logo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  margin-right: auto;
-  margin-left: 3vw;
-}
-
-.container-logo-words {
-  display: flex;
-  flex-direction: row;
-}
-
-
-.logo1 {
-  font-family: 'Press Start 2P';
-  font-size: 3vw;
-  font-weight: 100;
-  color: white;
-
-  @media screen and (max-width: 480px) {
-    font-size: 10vw;
-  }
-}
-
-.logo2 {
-  font-family: 'MontSerrat';
-  font-size: 2.5vw;
-  color: $laranja;
-  padding-right: 2%;
-
-  @media screen and (max-width: 480px) {
-    font-size: 8.5vw;
-  }
-}
-
-.logo3 {
-  font-family: 'Press Start 2P';
-  font-size: 3vw;
-  font-weight: 100;
-  color: white;
-
-  @media screen and (max-width: 480px) {
-    font-size: 10vw;
-  }
-}
-
-.logo-sub {
-  font-family: 'MontSerrat';
-  font-size: 1vw;
-  color: $laranja;
-  font-weight: 700;
-
-  @media screen and (max-width: 480px) {
-    font-size: 3.5vw;
-  }
-}
-
+// .user-button {
+//   padding: 7px;
+//   color: $azul-cinzento;
+//   border: 1px solid $azul-cinzento;
+//   border-radius: 5px;
+//   margin-right: 0.5vw;
+//   font-size: 1.2vw;
+// } 
 
 .user-login {
   display: flex;
@@ -110,8 +42,42 @@ $cinza-claro: #dfebed;
 
 .legend-user {
   font-family: "MontSerrat";
-  font-size: 0.9vw;
+  font-size: 0.8vw;
   color: $cinza-claro;
   font-weight: 600;
   cursor: pointer;
+
+  &:hover {
+    color: $laranja;
+  }
+}
+
+.dropdown-menu {
+  z-index: 9999;
+  justify-self: flex-end;
+  width: 20vh;
+  height: 5vh;
+  background-color: white;
+  position: fixed;
+  top: 4vh;
+  box-shadow: 0px 0px 8px 0px #49728585;
+  right: 3vh;
+  border-radius: 0 0 15px 15px;
+}
+
+.dropdown-hover {
+  background-color: $laranja;
+  cursor:pointer;
+}
+.item-drop {
+  top: 5vh;
+  right: 9vh;
+  position: fixed;
+  font-weight: 500;
+  font-size: 1vw;
+}
+
+.item-hover {
+  color: white;
+  cursor:pointer;
 }

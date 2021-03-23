@@ -1,15 +1,11 @@
 <div class="cabecalho">
-  <div class="items-container">
-    <div class="logo">
-      <div class="container-logo-words">
-        <div class="logo1">P</div>
-        <div class="logo2">&</div>
-        <div class="logo3">V</div>
-      </div> 
-    </div>
-    <div class="user-login">
-      <i class="fas fa-user user-button"></i> 
-      <p class="legend-user">{{usuarioName}}</p>
+  <div class="items-container"> 
+    <div class="user-login">      
+      <p class="legend-user" (click)="acaoUsuario()">{{usuarioName}}</p>
     </div>
   </div>
+</div>
+
+<div class="dropdown-menu {{hoverDropMenu}}" (mouseleave)="desactiveHoverDropdown()" (mouseover)="activeHoverDropdown()" *ngIf="mostrarDropdown">
+  <div class="item-drop {{hoverItemMenu}}" (click)="logout()">Logout</div>
 </div>

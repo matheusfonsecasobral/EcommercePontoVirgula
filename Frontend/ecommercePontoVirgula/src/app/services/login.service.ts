@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { NgxSpinnerService } from 'ngx-spinner';
 import { environment } from 'src/environments/environment';
 import { UsuarioModel } from '../models/usuario/usuario';
 
@@ -9,7 +10,7 @@ import { UsuarioModel } from '../models/usuario/usuario';
 
 export class LoginService {
 
-  constructor(private httpClient : HttpClient ) {} 
+  constructor(private httpClient : HttpClient,private spinner: NgxSpinnerService ) {} 
 
   public usuario: UsuarioModel = new UsuarioModel;
 
@@ -25,5 +26,13 @@ export class LoginService {
       `${environment.endPoint}/usuario/`,
       usuarioModel
     );
+  }
+
+  iniciarSpinner(){
+    this.spinner.show();
+  }
+
+  fecharSpinner(){
+    this.spinner.hide();
   }
 }
