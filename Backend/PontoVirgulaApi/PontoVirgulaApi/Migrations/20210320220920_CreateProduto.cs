@@ -16,7 +16,7 @@ namespace PontoVirgulaApi.Migrations
                     DESCRICAO = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     PRECO = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     ESTOQUE = table.Column<int>(type: "int", nullable: false),
-                    LINK_IMG = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    LINKIMG = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

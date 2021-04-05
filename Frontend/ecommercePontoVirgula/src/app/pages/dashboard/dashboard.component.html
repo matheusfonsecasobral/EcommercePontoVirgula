@@ -9,92 +9,22 @@
       <div class="title-card">Catálogo de produtos</div>
 
       <div class="grid-container">
-        <div class="card-item">
+        <div class="card-item" *ngFor="let item of this.ProdutosService.produto">
           <div class="card-item-container">
             <div class="card-title">
-              SSD Kingstom 480GB
+              {{item.nome}}
             </div>
             <div class="card-img">
-              <img class="img-card" src="https://images8.kabum.com.br/produtos/fotos/85198/85198_1484306114_g.jpg">
+              <img class="img-card" src={{item.linkImg}}>
             </div>
             <div class="container-compra">
               <button class="btn-comprar">Comprar</button>
               <div class="card-price">
-                R$449.90
+                R${{item.preco.toFixed(2)}}
               </div>
             </div>
           </div>
-        </div>
-        <div class="card-item">
-          <div class="card-item-container">
-            <div class="card-title">
-              Mouse Gamer
-            </div>
-            <div class="card-img">
-              <img class="img-card"
-                src="https://cdn.pichau.com.br/wysiwyg/Descricao/Logitech/910-005793/910-005793.png">
-            </div>
-            <div class="container-compra">
-              <button class="btn-comprar">Comprar</button>
-              <div class="card-price">
-                R$99.00
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-item">
-          <div class="card-item-container">
-            <div class="card-title">
-              Headphone Gatinho Rosa
-            </div>
-            <div class="card-img">
-              <img class="img-card"
-                src="https://static3.tcdn.com.br/img/img_prod/406359/headphone_bluetooth_com_orelhas_de_gato_e_iluminacao_led_fone_sem_fio_de_gatinho_exbom_hf_c240bt_ros_2189_1_b3160c12a06db549e7f17b58dfbce829.jpg">
-            </div>
-            <div class="container-compra">
-              <button class="btn-comprar">Comprar</button>
-              <div class="card-price">
-                R$229,00
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card-item">
-          <div class="card-item-container">
-            <div class="card-title">
-              Mouse Multilaser
-            </div>
-            <div class="card-img">
-              <img class="img-card"
-                src="https://www.ckinformatica.com.br/wp-content/uploads/2020/03/61hzuoXwjqL._AC_SL1500_.jpg">
-            </div>
-            <div class="container-compra">
-              <button class="btn-comprar">Comprar</button>
-              <div class="card-price">
-                R$19.90
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card-item">
-          <div class="card-item-container">
-            <div class="card-title">
-              Magic Keyboard Apple
-            </div>
-            <div class="card-img">
-              <img class="img-card"
-                src="https://www.iplace.com.br/ccstore/v1/images/?source=/file/v2907958400175703299/products/170276.00-magic-keyboard-apple-mla22bz-a.jpg&height=500&width=500&quality=0.9">
-            </div>
-            <div class="container-compra">
-              <button class="btn-comprar">Comprar</button>
-              <div class="card-price">
-                R$1052,00
-              </div>
-            </div>
-          </div>
-        </div>
+        </div> 
       </div>
     </div>
   </div>

@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using PontoVirgulaApi.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace APIPontoVirgula.Controllers
@@ -16,23 +17,41 @@ namespace APIPontoVirgula.Controllers
     public class ProdutoController : ControllerBase
     {
         [HttpGet]
-        public async Task<ActionResult<List<Produto>>> GetList([FromServices] DataContext context)
+        public async Task<ActionResult<List<ProdutoModelView>>> GetList([FromServices] DataContext context)
         {
             List<Produto> produtos = await context.Produto
                                 .AsNoTracking()
                                 .ToListAsync();
 
-            return produtos;
+            List<ProdutoModelView> prod2 = produtos.Select(x => new ProdutoModelView()
+            {
+                 Nome = x.NOME,
+                 Descricao = x.DESCRICAO,
+                 Estoque = x.ESTOQUE,
+                 LinkImg = x.LINKIMG,
+                 Preco = x.PRECO
+            }).ToList();
+
+            return Ok(prod2);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Produto>> GetProdutoById([FromServices] DataContext context, int id)
+        public async Task<ActionResult<ProdutoModelView>> GetProdutoById([FromServices] DataContext context, int id)
         {
             Produto produto = await context.Produto
                                     .AsNoTracking()
                                     .FirstOrDefaultAsync(x => x.ID == id);
 
-            return produto;
+            ProdutoModelView prod2 = new ProdutoModelView()
+            {
+                Nome = produto.NOME,
+                Descricao = produto.DESCRICAO,
+                Estoque = produto.ESTOQUE,
+                LinkImg = produto.LINKIMG,
+                Preco = produto.PRECO
+            };
+
+            return prod2;
         }
 
 
@@ -47,7 +66,7 @@ namespace APIPontoVirgula.Controllers
                 produto.DESCRICAO = produtoModel.Descricao;
                 produto.PRECO = produtoModel.Preco;
                 produto.ESTOQUE = produtoModel.Estoque;
-                produto.LINK_IMG = produtoModel.LinkImg;
+                produto.LINKIMG = produtoModel.LinkImg;
 
                 context.Produto.Add(produto);
                 await context.SaveChangesAsync();

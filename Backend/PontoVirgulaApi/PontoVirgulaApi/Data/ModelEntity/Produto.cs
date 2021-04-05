@@ -24,6 +24,6 @@ namespace APIPontoVirgula.Data.Repository.ModelEntity
         [Required]
         public int ESTOQUE { get; set; }
 
-        public string LINK_IMG { get; set; }
+        public string LINKIMG { get; set; }
     }
 }

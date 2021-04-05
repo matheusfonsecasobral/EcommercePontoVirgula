@@ -31,7 +31,7 @@ namespace PontoVirgulaApi.Migrations
                     b.Property<int>("ESTOQUE")
                         .HasColumnType("int");
 
-                    b.Property<string>("LINK_IMG")
+                    b.Property<string>("LINKIMG")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NOME")
