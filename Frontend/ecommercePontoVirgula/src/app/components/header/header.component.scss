@@ -36,16 +36,15 @@ $cinza-claro: #dfebed;
   align-items: center;
   flex-direction: row;
   margin-left: auto;
-  margin-right: 3vw;
-
+  margin-right: 21px;
 }
 
 .legend-user {
-  font-family: "MontSerrat";
-  font-size: 0.8vw;
+  font-family: "MontSerrat"; 
   color: $cinza-claro;
   font-weight: 600;
   cursor: pointer;
+  font-size: 18px;
 
   &:hover {
     color: $laranja;
@@ -55,13 +54,13 @@ $cinza-claro: #dfebed;
 .dropdown-menu {
   z-index: 9999;
   justify-self: flex-end;
-  width: 20vh;
-  height: 5vh;
+  width: 100px;
+  height: 40px;
+  right: -25px;
   background-color: white;
   position: fixed;
   top: 4vh;
   box-shadow: 0px 0px 8px 0px #49728585;
-  right: 3vh;
   border-radius: 0 0 15px 15px;
 }
 
@@ -69,12 +68,13 @@ $cinza-claro: #dfebed;
   background-color: $laranja;
   cursor:pointer;
 }
+
 .item-drop {
   top: 5vh;
-  right: 9vh;
+  right: 10px;
   position: fixed;
   font-weight: 500;
-  font-size: 1vw;
+  font-size: 15px;
 }
 
 .item-hover {
