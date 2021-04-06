@@ -1,6 +1,9 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { NgxSpinnerService } from 'ngx-spinner';
+import { CartProdutoModel } from 'src/app/models/cart/cart';
 import { ProdutoModel } from 'src/app/models/produto/produto';
+import { CartService } from 'src/app/services/cart.service';
 import { ProdutosService } from 'src/app/services/produtos.service';
 @Component({
   selector: 'app-dashboard',
@@ -9,7 +12,7 @@ import { ProdutosService } from 'src/app/services/produtos.service';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor(public ProdutosService: ProdutosService) { }
+  constructor(public ProdutosService: ProdutosService, private spinner: NgxSpinnerService, public CartService : CartService) { }
 
   ngOnInit(): void {
     this.carregarDashboard()
@@ -20,15 +23,15 @@ export class DashboardComponent implements OnInit {
     let numPromiseAll = 0;
     let onInits = [];
 
-
+    this.spinner.show();
     onInits.push(
       this.ProdutosService.getProdutos()
         .toPromise()
         .then((response: Array<ProdutoModel>) => {
           if (!response) {
-          } else {            
-            debugger
-            this.ProdutosService.produto = response 
+          } else {
+            this.spinner.hide();
+            this.ProdutosService.produto = response
           }
         }),
     )
@@ -41,5 +44,9 @@ export class DashboardComponent implements OnInit {
       .catch((error: HttpErrorResponse) => {
 
       })
+  }
+
+  adicionarAoCarrinho(item : CartProdutoModel){
+    this.CartService.adicionarAoCarrinho(item)
   }
 }

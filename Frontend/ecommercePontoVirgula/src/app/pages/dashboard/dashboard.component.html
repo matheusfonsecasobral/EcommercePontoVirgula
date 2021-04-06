@@ -9,7 +9,7 @@
       <div class="title-card">Catálogo de produtos</div>
 
       <div class="grid-container">
-        <div class="card-item" *ngFor="let item of this.ProdutosService.produto">
+        <div class="card-item" *ngFor="let item of this.ProdutosService.produto; let i = index;">
           <div class="card-item-container">
             <div class="card-title">
               {{item.nome}}
@@ -18,7 +18,7 @@
               <img class="img-card" src={{item.linkImg}}>
             </div>
             <div class="container-compra">
-              <button class="btn-comprar">Comprar</button>
+              <button class="btn-comprar" (click)="adicionarAoCarrinho(item)">Comprar</button>
               <div class="card-price">
                 R${{item.preco.toFixed(2)}}
               </div>

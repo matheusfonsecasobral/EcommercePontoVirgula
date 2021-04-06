@@ -8,5 +8,11 @@
       </div>
       <div class="logo-sub">Ponto&Vírgula</div>
     </div>
+    <div class="dashboard" (click)="redirectToDashboard()">
+      <i class="fas fa-home"></i>
+    </div>
+    <div class="cart" (click)="redirectToCart()">
+      <i class="fas fa-shopping-cart"></i> <span class="count">{{CartService.cart.numeroItensSelecionados}}</span>
+    </div>
   </div>
 </div>

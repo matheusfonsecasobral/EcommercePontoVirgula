@@ -8,14 +8,16 @@ import { AuthGuardService } from './guards/auth-guard.service';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginService } from './services/login.service';
 import { CabecalhoMenuComponent } from './components/cabecalho-menu/cabecalho-menu.component';
-import { NgxSpinnerModule } from "ngx-spinner"; 
+import { NgxSpinnerModule } from "ngx-spinner";
+import { CartComponent } from './pages/cart/cart.component'; 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
     DashboardComponent,
     HeaderComponent,
-    CabecalhoMenuComponent
+    CabecalhoMenuComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

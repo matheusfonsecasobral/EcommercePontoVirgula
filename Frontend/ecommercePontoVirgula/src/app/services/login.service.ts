@@ -19,7 +19,7 @@ export class LoginService {
       `${environment.endPoint}/usuario/validation`,
       usuarioModel
     );
-  }
+}
 
   cadastrarUsuario(usuarioModel: UsuarioModel) {
     return this.httpClient.post<boolean>(

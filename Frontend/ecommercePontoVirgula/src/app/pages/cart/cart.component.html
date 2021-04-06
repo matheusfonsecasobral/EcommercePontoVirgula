@@ -1,0 +1,43 @@
+<app-header></app-header>
+<app-cabecalho-menu></app-cabecalho-menu>
+
+<div class="container-geral"> 
+  <div class="container-dashboard">
+    <div class="card">
+      <div class="title-card">Carrinho</div>
+
+      <div class="mensagem-container" *ngIf="!CartService.cart.numeroItensSelecionados">
+        O seu carrinho está vazio.
+      </div>
+      
+      <div class="mensagem-container" *ngIf="CartService.cart.numeroItensSelecionados">
+       Preço total: {{CartService.cart.precoTotal.toFixed(2)}}
+       <button class="btn-comprar">Finalizar compra</button>
+      </div>
+      <div class="grid-container">
+        <div class="card-item" *ngFor="let item of CartService.cart.listaDeProdutos; let i = index;">
+          <div class="card-item-container">
+            <div class="card-title">
+              {{item.nome}}
+            </div>
+            <div class="card-img">
+              <img class="img-card" src={{item.linkImg}}>
+            </div>
+            <div class="container-compra">              
+              <button class="btn-comprar" (click)="removerDoCarrinho(item)">Remover</button>
+              <div class="quantidade">
+                Quantidade: {{item.quantidade}}x
+              </div>
+              <div class="card-price">
+                R${{item.preco.toFixed(2)}} p/un.
+              </div> 
+              <div class="card-price">
+                R${{(item.preco * item.quantidade).toFixed(2)}} total.
+              </div> 
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>
