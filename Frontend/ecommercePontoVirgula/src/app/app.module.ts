@@ -9,7 +9,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { LoginService } from './services/login.service';
 import { CabecalhoMenuComponent } from './components/cabecalho-menu/cabecalho-menu.component';
 import { NgxSpinnerModule } from "ngx-spinner";
-import { CartComponent } from './pages/cart/cart.component'; 
+import { CartComponent } from './pages/cart/cart.component';
+import { ToastrModule } from 'ngx-toastr';
+import { FooterComponent } from './components/footer/footer.component';
+import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-privacidade.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,15 +20,18 @@ import { CartComponent } from './pages/cart/cart.component';
     DashboardComponent,
     HeaderComponent,
     CabecalhoMenuComponent,
-    CartComponent
+    CartComponent,
+    FooterComponent,
+    PoliticaPrivacidadeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgxSpinnerModule,
     BrowserAnimationsModule, 
+    ToastrModule.forRoot(), 
   ],
-  schemas:[
+  schemas: [
     CUSTOM_ELEMENTS_SCHEMA
   ],
   providers: [AuthGuardService, LoginService],

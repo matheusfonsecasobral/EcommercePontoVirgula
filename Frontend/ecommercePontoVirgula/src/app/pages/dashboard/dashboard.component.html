@@ -2,12 +2,9 @@
 <app-cabecalho-menu></app-cabecalho-menu>
 
 <div class="container-geral">
-
-
   <div class="container-dashboard">
     <div class="card">
       <div class="title-card">Catálogo de produtos</div>
-
       <div class="grid-container">
         <div class="card-item" *ngFor="let item of this.ProdutosService.produto; let i = index;">
           <div class="card-item-container">
@@ -24,8 +21,9 @@
               </div>
             </div>
           </div>
-        </div> 
+        </div>
       </div>
     </div>
   </div>
+  <app-footer></app-footer>
 </div>

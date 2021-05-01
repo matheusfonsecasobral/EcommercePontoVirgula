@@ -43,24 +43,25 @@ hr {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  justify-items: center; 
+  justify-items: center;
+  margin-top: 10vh;
 
-  @media screen and (max-width:480px) and (max-height:850px) {
-    grid-template-columns: repeat(1, 1fr); 
+  @media screen and (max-width:767px) {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 4vh;
   }
 
-  @media screen and (min-width:768px) and (min-height:1024px) {
+  @media screen and (min-width:768px) {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media screen and (min-width:1024px) and (min-height:768px) {
-    grid-template-columns: repeat(5, 1fr);
+  @media screen and (min-width:1024px) {
+    grid-template-columns: repeat(3, 35%);
   }
 
-  @media screen and (min-width:1024px) and (min-height:1366px) {
-    grid-template-columns: repeat(3, 1fr);
+  @media screen and (min-width:1366px) {
+    grid-template-columns: repeat(4, 25%);
   }
-
 }
 
 
@@ -72,29 +73,19 @@ hr {
   height: 50vh;
   margin-top: 5vh;
 
-  @media screen and (max-width:480px) and (max-height:850px) {
-    width: 80vw;
-    height: 55vh;
+  @media screen and (max-width:767px) {
+    width: 270px;
+    height: 425px;
   }
 
-  @media screen and (min-width:768px) and (min-height:1024px) {
-    width: 35vw;
-    height: 50vh;
+  @media screen and (min-width:768px) {
+    width: 300px;
+    height: 450px;
   }
 
-  @media screen and (min-width:1024px) and (min-height:768px) {
-    width: 15vw;
-    height: 50vh;
-  }
-
-  @media screen and (min-width:1024px) and (min-height:1024px) {
-    width: 15vw;
-    height: 50vh;
-  }
-
-  @media screen and (min-width:1024px) and (min-height:1366px) {
-    width: 25vw;
-    height: 25vh;
+  @media screen and (min-width:1024px) {
+    width: 280px;
+    height: 500px;
   }
 }
 
@@ -112,23 +103,7 @@ hr {
   align-self: flex-start;
   color: $cinza-escuro;
   font-weight: 600;
-  font-size: 0.9vw;
-
-  @media screen and (max-width:480px) and (max-height:850px) {
-    font-size: 4.2vw
-  }
-
-  @media screen and (min-width:768px) and (min-height:1024px) {
-    font-size: 2vw;
-  }
-
-  @media screen and (min-width:1024px) and (min-height:768px) {
-    font-size: 0.9vw;
-  }
-
-  @media screen and (min-width:1024px) and (min-height:1366px) {
-    font-size: 0.9vw;
-  }
+  font-size: 15px;
 }
 
 .card-img {
@@ -144,27 +119,11 @@ hr {
   color: $laranja;
   margin-top: auto;
   font-weight: 700;
-  font-size: 1.2vw;
-
-  @media screen and (max-width:480px) and (max-height:850px) {
-    font-size: 6.2vw;
-  }
-
-  @media screen and (min-width:768px) and (min-height:1024px) {
-    font-size: 2.8vw;
-  }
-
-  @media screen and (min-width:1024px) and (min-height:768px) {
-    font-size: 1.2vw;
-  }
-
-  @media screen and (min-width:1024px) and (min-height:1366px) {
-    font-size: 1.8vw;
-  }
+  font-size: 24px;
 }
 
 
-card-price-final{
+.card-price-final {
   display: flex;
   align-self: center;
   color: $laranja;
@@ -194,8 +153,7 @@ card-price-final{
   height: 230px;
 }
 
-.container-geral {
-  padding-top: 3vh;
+.container-geral { 
   height: 100%
 }
 
@@ -241,3 +199,4 @@ card-price-final{
   font-size: 24px;
   color: $laranja;
 }
+

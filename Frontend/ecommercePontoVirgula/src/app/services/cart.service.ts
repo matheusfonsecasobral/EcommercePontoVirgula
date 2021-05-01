@@ -16,7 +16,7 @@ export class CartService {
   adicionarAoCarrinho(item: CartProdutoModel) {
 
     let cartProduct: number = this.cart.listaDeProdutos.findIndex(i => i.nome === item.nome);
-    
+
     if (cartProduct !== -1) {
       this.cart.listaDeProdutos[cartProduct].quantidade++;
     } else {
@@ -35,6 +35,8 @@ export class CartService {
     this.cart.listaDeProdutos.splice(cartProduct, 1);
   }
 
-
+  finalizarCompra() {
+    this.cart = new CartModel(); ;
+  }
 
 }

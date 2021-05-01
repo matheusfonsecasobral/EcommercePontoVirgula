@@ -11,8 +11,8 @@
       </div>
       
       <div class="mensagem-container" *ngIf="CartService.cart.numeroItensSelecionados">
-       Preço total: {{CartService.cart.precoTotal.toFixed(2)}}
-       <button class="btn-comprar">Finalizar compra</button>
+       Preço total: R${{CartService.cart.precoTotal.toFixed(2)}}
+       <button class="btn-comprar" (click)="finalizarCompra()">Finalizar compra</button>
       </div>
       <div class="grid-container">
         <div class="card-item" *ngFor="let item of CartService.cart.listaDeProdutos; let i = index;">
@@ -40,4 +40,5 @@
       </div>
     </div>
   </div>
+  <app-footer></app-footer>
 </div>

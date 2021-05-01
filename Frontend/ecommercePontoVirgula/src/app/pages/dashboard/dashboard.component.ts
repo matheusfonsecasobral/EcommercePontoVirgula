@@ -5,6 +5,8 @@ import { CartProdutoModel } from 'src/app/models/cart/cart';
 import { ProdutoModel } from 'src/app/models/produto/produto';
 import { CartService } from 'src/app/services/cart.service';
 import { ProdutosService } from 'src/app/services/produtos.service';
+import { ToastrService } from 'ngx-toastr';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -12,7 +14,7 @@ import { ProdutosService } from 'src/app/services/produtos.service';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor(public ProdutosService: ProdutosService, private spinner: NgxSpinnerService, public CartService : CartService) { }
+  constructor(private Router: Router, public ProdutosService: ProdutosService, private toastr: ToastrService, private spinner: NgxSpinnerService, public CartService: CartService) { }
 
   ngOnInit(): void {
     this.carregarDashboard()
@@ -46,7 +48,14 @@ export class DashboardComponent implements OnInit {
       })
   }
 
-  adicionarAoCarrinho(item : CartProdutoModel){
+  adicionarAoCarrinho(item: any) {
     this.CartService.adicionarAoCarrinho(item)
+    this.toastr.info(item.nome + ' adicionado ao carrinho com sucesso.',
+      'Carrinho',
+      {
+        timeOut: 5000,
+        positionClass: 'toast-bottom-right'
+      });
+    this.Router.navigate(["/login"]);
   }
 }
