@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CartProdutoModel } from 'src/app/models/cart/cart';
 import { CartService } from 'src/app/services/cart.service';
 import { ToastrService } from 'ngx-toastr';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
@@ -36,6 +37,6 @@ export class CartComponent implements OnInit {
         positionClass: 'toast-bottom-right'
       });
     this.CartService.finalizarCompra();
-    
-  }
+
+  } 
 }

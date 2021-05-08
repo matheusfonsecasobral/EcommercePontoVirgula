@@ -1,0 +1,33 @@
+<app-header></app-header>
+<app-cabecalho-menu></app-cabecalho-menu>
+
+<div class="container-geral">
+  <div class="container-principal">
+    <div class="card">
+      <div class="grid-container">
+        <div class="card-item">
+          <div class="card-item-container">
+            <div class="imagem">
+              <img class="imagem-tam" src="{{produto.linkImg}}">
+            </div>
+            <div class="container-card">
+              <div class="card-title">
+                {{produto.nome}}
+              </div>
+              <div id="descricao" class="card-conteudo">
+
+              </div>
+              <div class="card-preco">
+                R$ {{produto.preco.toFixed(2)}}
+              </div>
+              <div (click)="adicionarCarrinho()" class="btn-comprar">
+                Comprar
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

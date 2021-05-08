@@ -13,6 +13,9 @@ import { CartComponent } from './pages/cart/cart.component';
 import { ToastrModule } from 'ngx-toastr';
 import { FooterComponent } from './components/footer/footer.component';
 import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-privacidade.component';
+import { CadastroProdutoComponent } from './pages/cadastro-produto/cadastro-produto.component';
+import { FormsModule } from '@angular/forms';
+import { VisualizacaoItemComponent } from './pages/visualizacao-item/visualizacao-item.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +25,10 @@ import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-pr
     CabecalhoMenuComponent,
     CartComponent,
     FooterComponent,
-    PoliticaPrivacidadeComponent
+    PoliticaPrivacidadeComponent,
+    CadastroProdutoComponent,
+    VisualizacaoItemComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -30,6 +36,7 @@ import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-pr
     NgxSpinnerModule,
     BrowserAnimationsModule, 
     ToastrModule.forRoot(), 
+    FormsModule,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

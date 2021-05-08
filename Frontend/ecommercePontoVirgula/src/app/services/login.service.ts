@@ -10,16 +10,17 @@ import { UsuarioModel } from '../models/usuario/usuario';
 
 export class LoginService {
 
-  constructor(private httpClient : HttpClient,private spinner: NgxSpinnerService ) {} 
+  constructor(private httpClient: HttpClient, private spinner: NgxSpinnerService) { }
 
   public usuario: UsuarioModel = new UsuarioModel;
+  usuarioChecado: boolean = false;
 
   validarLogin(usuarioModel: UsuarioModel) {
     return this.httpClient.post<UsuarioModel>(
       `${environment.endPoint}/usuario/validation`,
       usuarioModel
     );
-}
+  }
 
   cadastrarUsuario(usuarioModel: UsuarioModel) {
     return this.httpClient.post<boolean>(
@@ -28,11 +29,17 @@ export class LoginService {
     );
   }
 
-  iniciarSpinner(){
+  iniciarSpinner() {
     this.spinner.show();
   }
 
-  fecharSpinner(){
+  fecharSpinner() {
     this.spinner.hide();
+  }
+
+  buscarUsuario(email: string) {
+    return this.httpClient.get<UsuarioModel>(
+      `${environment.endPoint}/usuario/email/` + email ,
+    );
   }
 }

@@ -58,7 +58,13 @@ button {
   font-family: 'Montserrat';
 }
 
+textarea[type="text"]{
+  white-space: pre-wrap;
+}
+
 input[type=text],
+input[type=number],
+textarea[type=text],
 input[type=password],
 select {
   width: 100%;

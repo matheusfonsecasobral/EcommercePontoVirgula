@@ -79,6 +79,23 @@ namespace APIPontoVirgula.Controllers
             };
         }
 
+        [HttpGet("email/{email}")]
+        public async Task<ActionResult<UsuarioModelView>> GetUsuarioByEmail([FromServices] DataContext context, string email)
+        {
+            var usuario = await context.Usuario
+                                    .AsNoTracking()
+                                    .FirstOrDefaultAsync(x => x.EMAIL == email);
+
+            return new UsuarioModelView()
+            {
+                NomeCompleto = usuario.NOME,
+                Email = usuario.EMAIL,
+                Senha = usuario.SENHA,
+                Admin = usuario.ADMIN
+            };
+        }
+
+
         [HttpPost]
         public async Task<ActionResult> Post([FromServices] DataContext context, UsuarioModelView usuarioModel)
         {

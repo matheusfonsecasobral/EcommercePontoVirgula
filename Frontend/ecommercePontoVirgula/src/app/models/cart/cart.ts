@@ -5,6 +5,7 @@ export class CartModel{
 }
 
 export class CartProdutoModel{    
+    id : number = 0;
     nome : string = '';
     descricao : string = '';
     preco: number = 0;

@@ -1,0 +1,53 @@
+<app-header></app-header>
+<app-cabecalho-menu></app-cabecalho-menu>
+
+<div class="container-geral">
+  <div class="container-principal">
+    <div class="card">
+      <div class="title-card">Cadastro de Produto</div>
+      <div class="grid-container">
+        <div class="card-item">
+          <div class="card-item-container">
+            <div class="form-login">
+              <div class="nome-container">
+                <span class="title">Nome do produto</span>
+                <input [(ngModel)]="nomeModel"  id="nome" class="input-login" type="text" placeholder="Nome do produto">
+                <span class="legend-error" *ngIf="errorStyleNome">{{msgErrorNome}}</span>
+              </div>
+
+              <div class="descricao-container">
+                <span class="title">Descrição do produto</span>
+                <textarea [(ngModel)]="descricaoModel" id="descricao" class="input-login" type="text" placeholder="Descrição do produto"></textarea>
+                <span class="legend-error" *ngIf="errorStyleDescricao"> {{msgErrorDescricao}}</span>
+              </div>
+
+              <div class="preco-container">
+                <span class="title">Preço</span>
+                <input [(ngModel)]="precoModel" id="preco" class="input-login" type="number" placeholder="0.00">
+                <span class="legend-error" *ngIf="errorStylePreco"> {{msgErrorPreco}}</span>
+              </div>
+
+              <div class="estoque-container">
+                <span class="title">Estoque</span>
+                <input [(ngModel)]="estoqueModel" id="estoque" class="input-login" type="number" placeholder="1">
+                <span class="legend-error" *ngIf="errorStyleEstoque"> {{msgErrorEstoque}}</span>
+              </div> 
+
+              <div class="img-container">
+                <span class="title">Link da imagem</span>
+                <input [(ngModel)]="imgModel" id="link" class="input-login" type="text" placeholder="https://site.com.br/arquivos/imagem.jpg">
+                <span class="legend-error" *ngIf="errorStyleImg"> {{msgErrorImg}}</span>
+              </div>               
+
+              <button (click)="cadastroProduto()" class="button-login">
+                <i class="fas fa-sign-in-alt"></i> Cadastrar
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

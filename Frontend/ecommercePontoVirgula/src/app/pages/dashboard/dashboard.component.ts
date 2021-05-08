@@ -58,4 +58,8 @@ export class DashboardComponent implements OnInit {
       });
     this.Router.navigate(["/login"]);
   }
+  
+  redirectItem(id: number) {
+    this.Router.navigate(["item/" + id])
+  }
 }

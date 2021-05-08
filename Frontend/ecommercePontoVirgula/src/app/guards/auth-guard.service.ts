@@ -19,15 +19,17 @@ export class AuthGuardService implements CanActivate {
     return this.isAuthenticated;
   }
 
-  active(nomeCompleto: string) {
+  active(nomeCompleto: string, email : string) {
     this.isAuthenticated = true;
     this.storage.set("isAuthenticated", this.isAuthenticated);
-    this.storage.set("nomeCompleto", nomeCompleto);
+    this.storage.set("NomeCompleto", nomeCompleto);
+    this.storage.set("Email", email);
   }
 
   desactive() {
     this.isAuthenticated = false;
     this.storage.set("isAuthenticated", this.isAuthenticated);
-    this.storage.set("nomeCompleto", "");
+    this.storage.set("NomeCompleto", "");
+    this.storage.set("Email", "");
   }
 }

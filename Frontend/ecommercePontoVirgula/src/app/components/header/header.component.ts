@@ -28,7 +28,7 @@ export class HeaderComponent implements OnInit {
       this.usuarioName = this.LoginService.usuario.NomeCompleto
     } else {
       if (this.storage.get("isAuthenticated")) {
-        this.usuarioName = this.storage.get("nomeCompleto")
+        this.usuarioName = this.storage.get("NomeCompleto") 
       }
     }
   }

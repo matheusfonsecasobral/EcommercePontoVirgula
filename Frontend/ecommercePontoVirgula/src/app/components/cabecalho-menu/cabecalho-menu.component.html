@@ -1,4 +1,4 @@
-<div class="cabecalho-secundario">
+<div class="cabecalho-secundario" >
   <div class="items-container">
     <div class="logo">
       <div class="container-logo-words">
@@ -13,6 +13,10 @@
     </div>
     <div class="cart" (click)="redirectToCart()">
       <i class="fas fa-shopping-cart"></i> <span class="count">{{CartService.cart.numeroItensSelecionados}}</span>
+    </div>
+    <div *ngIf="this.LoginService.usuario.Admin === 1" class="cadastro-produto" (click)="redirectToCadastroProduto()">      
+      <i class="fas fa-wrench"></i>
+      <label class="tag">Painel administrativo</label>
     </div>
   </div>
 </div>

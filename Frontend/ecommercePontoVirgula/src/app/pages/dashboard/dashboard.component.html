@@ -12,7 +12,7 @@
               {{item.nome}}
             </div>
             <div class="card-img">
-              <img class="img-card" src={{item.linkImg}}>
+              <img class="img-card" (click)="redirectItem(item.id)" src={{item.linkImg}}>
             </div>
             <div class="container-compra">
               <button class="btn-comprar" (click)="adicionarAoCarrinho(item)">Comprar</button>

@@ -25,11 +25,12 @@ namespace APIPontoVirgula.Controllers
 
             List<ProdutoModelView> prod2 = produtos.Select(x => new ProdutoModelView()
             {
-                 Nome = x.NOME,
-                 Descricao = x.DESCRICAO,
-                 Estoque = x.ESTOQUE,
-                 LinkImg = x.LINKIMG,
-                 Preco = x.PRECO
+                Id = x.ID,
+                Nome = x.NOME,
+                Descricao = x.DESCRICAO,
+                Estoque = x.ESTOQUE,
+                LinkImg = x.LINKIMG,
+                Preco = x.PRECO
             }).ToList();
 
             return Ok(prod2);
@@ -42,18 +43,21 @@ namespace APIPontoVirgula.Controllers
                                     .AsNoTracking()
                                     .FirstOrDefaultAsync(x => x.ID == id);
 
-            ProdutoModelView prod2 = new ProdutoModelView()
+            if (produto != null)
             {
-                Nome = produto.NOME,
-                Descricao = produto.DESCRICAO,
-                Estoque = produto.ESTOQUE,
-                LinkImg = produto.LINKIMG,
-                Preco = produto.PRECO
-            };
+                ProdutoModelView prod2 = new ProdutoModelView()
+                {
+                    Nome = produto.NOME,
+                    Descricao = produto.DESCRICAO,
+                    Estoque = produto.ESTOQUE,
+                    LinkImg = produto.LINKIMG,
+                    Preco = produto.PRECO
+                };
+                return prod2;
+            }
 
-            return prod2;
-        }
-
+            return null; 
+        } 
 
         [HttpPost]
         public async Task<ActionResult> Post([FromServices] DataContext context, ProdutoModelView produtoModel)

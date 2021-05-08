@@ -9,13 +9,24 @@ import { environment } from 'src/environments/environment';
 })
 export class ProdutosService {
 
-  constructor(private httpClient : HttpClient,private spinner: NgxSpinnerService) {} 
+  constructor(private httpClient: HttpClient, private spinner: NgxSpinnerService) { }
 
-  public produto : Array<ProdutoModel> = new Array<ProdutoModel>();
-  
+  public produto: Array<ProdutoModel> = new Array<ProdutoModel>();
+
   getProdutos() {
     return this.httpClient.get<Array<ProdutoModel>>(
-      `${environment.endPoint}/produto`      
+      `${environment.endPoint}/produto`
     );
+  }
+
+  buscarProdutoPorId(id: number) { 
+    return this.httpClient.get<ProdutoModel>(
+      `${environment.endPoint}/produto/` + id);
+  }
+
+  cadastrarProduto(produto: ProdutoModel) {
+    return this.httpClient.post<boolean>(
+      `${environment.endPoint}/produto`
+      , produto);
   }
 }

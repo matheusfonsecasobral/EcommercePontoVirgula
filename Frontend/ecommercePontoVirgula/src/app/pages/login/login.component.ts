@@ -114,7 +114,8 @@ export class LoginComponent implements OnInit {
       let usuario: UsuarioModel = {
         Email: email,
         Senha: senha,
-        NomeCompleto: completeName
+        NomeCompleto: completeName,
+        Admin : 0
       }
 
       let onInits = [];
@@ -172,7 +173,8 @@ export class LoginComponent implements OnInit {
       let usuario: UsuarioModel = {
         Email: email,
         Senha: senha,
-        NomeCompleto: ''
+        NomeCompleto: '',
+        Admin : 0
       };
 
       if (validationError) {
@@ -194,7 +196,7 @@ export class LoginComponent implements OnInit {
               this.loginService.usuario.NomeCompleto = response.nomeCompleto; 
               this.loginService.usuario.Email = response.email;
               this.loginService.usuario.Senha = response.senha;
-              this.authGuard.active(response.nomeCompleto)
+              this.authGuard.active(response.nomeCompleto, response.email)
               this.router.navigate(['/dashboard']);
             }
           }),
