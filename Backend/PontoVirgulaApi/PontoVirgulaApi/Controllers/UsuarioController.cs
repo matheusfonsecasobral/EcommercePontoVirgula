@@ -36,7 +36,8 @@ namespace APIPontoVirgula.Controllers
                         {
                             NomeCompleto = usuario.NOME,
                             Email = usuario.EMAIL,
-                            Senha = usuario.SENHA
+                            Senha = usuario.SENHA,
+                            Admin = usuario.ADMIN
                         };
                     }
                     else
@@ -58,17 +59,24 @@ namespace APIPontoVirgula.Controllers
                                 .AsNoTracking()
                                 .ToListAsync();
 
+
             return usuarios;
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Usuario>> GetUsuarioById([FromServices] DataContext context, int id)
+        public async Task<ActionResult<UsuarioModelView>> GetUsuarioById([FromServices] DataContext context, int id)
         {
             var usuario = await context.Usuario
                                     .AsNoTracking()
                                     .FirstOrDefaultAsync(x => x.ID == id);
 
-            return usuario;
+            return new UsuarioModelView()
+            {
+                NomeCompleto = usuario.NOME,
+                Email = usuario.EMAIL,
+                Senha = usuario.SENHA,
+                Admin = usuario.ADMIN
+            };
         }
 
         [HttpPost]

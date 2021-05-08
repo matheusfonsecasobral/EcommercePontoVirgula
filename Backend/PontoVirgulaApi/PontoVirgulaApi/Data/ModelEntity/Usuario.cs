@@ -21,5 +21,7 @@ namespace APIPontoVirgula.Data.Repository.ModelEntity
 
         [Required]
         public string SENHA { get; set; }
+
+        public int ADMIN { get; set; }
     }
 }
