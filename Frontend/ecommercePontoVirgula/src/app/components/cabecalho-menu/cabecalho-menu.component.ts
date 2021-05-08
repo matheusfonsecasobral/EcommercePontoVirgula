@@ -46,7 +46,6 @@ export class CabecalhoMenuComponent implements OnInit {
         .then((response: any) => {
           if (!response) {
           } else {
-            debugger
             this.LoginService.usuario.Admin = response.admin;
             this.LoginService.usuarioChecado = true;
           }

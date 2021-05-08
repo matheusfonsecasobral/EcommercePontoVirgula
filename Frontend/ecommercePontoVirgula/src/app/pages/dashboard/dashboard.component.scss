@@ -43,8 +43,7 @@ hr {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  justify-items: center;
-  margin-top: 10vh;
+  justify-items: center; 
 
   @media screen and (max-width:767px) {
     grid-template-columns: repeat(1, 1fr);

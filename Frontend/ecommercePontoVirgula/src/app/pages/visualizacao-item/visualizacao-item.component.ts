@@ -15,10 +15,11 @@ import { ProdutosService } from 'src/app/services/produtos.service';
 })
 export class VisualizacaoItemComponent implements OnInit {
 
-  constructor(private router: Router, private toastr : ToastrService, private CartService : CartService, private ActivatedRoute: ActivatedRoute, private ProdutosService: ProdutosService, private spinner: NgxSpinnerService) { }
+  constructor(private router: Router, private toastr: ToastrService, private CartService: CartService, private ActivatedRoute: ActivatedRoute, private ProdutosService: ProdutosService, private spinner: NgxSpinnerService) { }
 
   id: number = 0;
   produto = new ProdutoModel;
+  formActive: boolean = false;
 
   ngOnInit(): void {
     this.spinner.show();
@@ -40,6 +41,7 @@ export class VisualizacaoItemComponent implements OnInit {
           } else {
             this.produto = response;
             this.carregarPagina();
+            this.formActive = true;
           }
         }),
     )
@@ -61,14 +63,14 @@ export class VisualizacaoItemComponent implements OnInit {
   }
 
   adicionarCarrinho() {
-    let cardProduto : CartProdutoModel = {
-      id : this.produto.id,
-      nome : this.produto.nome,
-      descricao  : this.produto.descricao,
-      preco : this.produto.preco,
-      estoque : this.produto.estoque,
-      linkImg : this.produto.linkImg,
-      quantidade : 1,
+    let cardProduto: CartProdutoModel = {
+      id: this.produto.id,
+      nome: this.produto.nome,
+      descricao: this.produto.descricao,
+      preco: this.produto.preco,
+      estoque: this.produto.estoque,
+      linkImg: this.produto.linkImg,
+      quantidade: 1,
     };
 
     this.CartService.adicionarAoCarrinho(cardProduto)
