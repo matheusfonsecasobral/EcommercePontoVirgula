@@ -18,10 +18,9 @@ export class VisualizacaoItemComponent implements OnInit {
   constructor(private router: Router, private toastr: ToastrService, private CartService: CartService, private ActivatedRoute: ActivatedRoute, private ProdutosService: ProdutosService, private spinner: NgxSpinnerService) { }
 
   id: number = 0;
-  produto = new ProdutoModel;
-  formActive: boolean = false;
+  produto = new ProdutoModel; 
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
     this.spinner.show();
     this.id = this.ActivatedRoute.snapshot.params.id;
     this.verificaSeIdExiste()
@@ -38,10 +37,9 @@ export class VisualizacaoItemComponent implements OnInit {
         .then((response: ProdutoModel) => {
           if (!response) {
             this.router.navigate(["/dashboard"]);
-          } else {
+          } else { 
             this.produto = response;
-            this.carregarPagina();
-            this.formActive = true;
+            this.carregarPagina(); 
           }
         }),
     )
@@ -56,6 +54,7 @@ export class VisualizacaoItemComponent implements OnInit {
   }
 
   carregarPagina() {
+    debugger
     let descricao: any
     descricao = document.getElementById('descricao')
     descricao.innerHTML = this.produto.descricao ? this.produto.descricao : "Produto não possui descrição.";
