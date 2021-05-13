@@ -23,16 +23,6 @@ export class CabecalhoMenuComponent implements OnInit {
     }
   }
 
-  redirectToDashboard() {
-    this.Router.navigate(["/dashboard"]);
-  }
-  redirectToCart() {
-    this.Router.navigate(["/cart"]);
-  }
-  redirectToCadastroProduto() {
-    this.Router.navigate(["/cadastro-produto"]);
-  }
-
   verificaSeUsuarioAdm() {
     let numPromiseAll = 0;
     let onInits = [];

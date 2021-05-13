@@ -8,13 +8,13 @@
       </div>
       <div class="logo-sub">Ponto&Vírgula</div>
     </div>
-    <div class="dashboard" (click)="redirectToDashboard()">
+    <div class="dashboard" routerLink="/dashboard">
       <i class="fas fa-home"></i>
     </div>
-    <div class="cart" (click)="redirectToCart()">
+    <div class="cart" routerLink="/cart">
       <i class="fas fa-shopping-cart"></i> <span class="count">{{CartService.cart.numeroItensSelecionados}}</span>
     </div>
-    <div *ngIf="this.LoginService.usuario.Admin === 1" class="cadastro-produto" (click)="redirectToCadastroProduto()">      
+    <div *ngIf="this.LoginService.usuario.Admin === 1" class="cadastro-produto" routerLink="/cadastro-produto">      
       <i class="fas fa-wrench"></i>
       <label class="tag">Painel administrativo</label>
     </div>

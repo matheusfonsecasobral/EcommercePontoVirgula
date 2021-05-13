@@ -56,10 +56,10 @@ export class DashboardComponent implements OnInit {
         timeOut: 5000,
         positionClass: 'toast-bottom-right'
       });
-    this.Router.navigate(["/login"]);
+      this.Router.navigateByUrl("/login");
   }
   
   redirectItem(id: number) {
-    this.Router.navigate(["item/" + id])
+    this.Router.navigate(["item", id])
   }
 }

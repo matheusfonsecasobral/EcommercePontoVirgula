@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
     
     if (this.storage.get("isAuthenticated") !== null) {
       if (this.storage.get("isAuthenticated")) {
-        this.router.navigate(["/dashboard"])
+        this.router.navigateByUrl("/dashboard");
       }
     }
 
@@ -197,7 +197,7 @@ export class LoginComponent implements OnInit {
               this.loginService.usuario.Email = response.email;
               this.loginService.usuario.Senha = response.senha;
               this.authGuard.active(response.nomeCompleto, response.email)
-              this.router.navigate(['/dashboard']);
+              this.router.navigateByUrl("/dashboard");
             }
           }),
       )

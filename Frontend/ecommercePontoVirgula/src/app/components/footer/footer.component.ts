@@ -11,9 +11,5 @@ export class FooterComponent implements OnInit {
   constructor(private Router: Router) { }
 
   ngOnInit(): void {
-  }
-
-  redirectPoliticaDePrivacidade() {
-    this.Router.navigate(["/politica-privacidade"])
-  }
+  } 
 }

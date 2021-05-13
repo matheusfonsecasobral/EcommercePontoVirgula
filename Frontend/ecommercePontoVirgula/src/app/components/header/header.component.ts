@@ -35,7 +35,7 @@ export class HeaderComponent implements OnInit {
 
   acaoUsuario() {
     if (this.usuarioName === "Login") {
-      this.Router.navigate(["/login"]);
+      this.Router.navigateByUrl("/login");
     } else {
       this.mostrarDropdown = !this.mostrarDropdown;
     }
@@ -56,7 +56,7 @@ export class HeaderComponent implements OnInit {
   }
 
   logout() {
-    this.Router.navigate(["/login"]);
+    this.Router.navigateByUrl("/login");
     this.AuthGuardService.desactive();
   }
 }

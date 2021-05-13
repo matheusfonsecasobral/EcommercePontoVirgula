@@ -36,7 +36,7 @@ export class VisualizacaoItemComponent implements OnInit {
         .toPromise()
         .then((response: ProdutoModel) => {
           if (!response) {
-            this.router.navigate(["/dashboard"]);
+            this.router.navigateByUrl("/dashboard");
           } else { 
             this.produto = response;
             this.carregarPagina(); 
