@@ -1,4 +1,4 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA, LOCALE_ID, DEFAULT_CURRENCY_CODE } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
@@ -16,6 +16,10 @@ import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-pr
 import { CadastroProdutoComponent } from './pages/cadastro-produto/cadastro-produto.component';
 import { FormsModule } from '@angular/forms';
 import { VisualizacaoItemComponent } from './pages/visualizacao-item/visualizacao-item.component';
+import localePt from '@angular/common/locales/pt';
+import { registerLocaleData } from '@angular/common';
+
+registerLocaleData(localePt,'pt');
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +45,7 @@ import { VisualizacaoItemComponent } from './pages/visualizacao-item/visualizaca
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
   ],
-  providers: [AuthGuardService, LoginService],
+  providers: [AuthGuardService, LoginService, {provide: LOCALE_ID, useValue: 'pt'}, {provide: DEFAULT_CURRENCY_CODE, useValue: 'BRL'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
