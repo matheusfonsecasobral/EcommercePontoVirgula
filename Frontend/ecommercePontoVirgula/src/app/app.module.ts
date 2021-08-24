@@ -18,7 +18,8 @@ import { FormsModule } from '@angular/forms';
 import { VisualizacaoItemComponent } from './pages/visualizacao-item/visualizacao-item.component';
 import localePt from '@angular/common/locales/pt';
 import { registerLocaleData } from '@angular/common';
-
+import { PontosColetaComponent } from './pages/pontos-coleta/pontos-coleta.component';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 registerLocaleData(localePt,'pt');
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ registerLocaleData(localePt,'pt');
     FooterComponent,
     PoliticaPrivacidadeComponent,
     CadastroProdutoComponent,
-    VisualizacaoItemComponent
+    VisualizacaoItemComponent,
+    PontosColetaComponent
     
   ],
   imports: [
@@ -41,6 +43,7 @@ registerLocaleData(localePt,'pt');
     BrowserAnimationsModule, 
     ToastrModule.forRoot(), 
     FormsModule,
+    LeafletModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

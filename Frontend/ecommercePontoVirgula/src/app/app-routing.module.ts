@@ -8,11 +8,13 @@ import { CartComponent } from './pages/cart/cart.component';
 import { PoliticaPrivacidadeComponent } from './politica-privacidade/politica-privacidade.component';
 import { CadastroProdutoComponent } from './pages/cadastro-produto/cadastro-produto.component';
 import { VisualizacaoItemComponent } from './pages/visualizacao-item/visualizacao-item.component';
+import { PontosColetaComponent } from './pages/pontos-coleta/pontos-coleta.component';
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'cart', component: CartComponent, canActivate: [AuthGuardService] },
   { path: 'politica-privacidade', component: PoliticaPrivacidadeComponent },
+  { path: 'pontos-coleta', component: PontosColetaComponent },
   { path: 'cadastro-produto', component: CadastroProdutoComponent },
   { path: 'item/:id', component: VisualizacaoItemComponent },
   { path: '**', redirectTo: '/login', pathMatch: 'full' },
